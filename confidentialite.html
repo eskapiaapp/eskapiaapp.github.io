@@ -34,15 +34,17 @@
     border: 1px solid var(--bordure); background: var(--surface); color: var(--texte); cursor: pointer; }
   .langues button[aria-pressed="true"] { background: var(--texte); color: #fff; border-color: var(--texte); }
   [data-lang] { display: none; }
-  html[lang="fr"] [data-lang="fr"], html[lang="en"] [data-lang="en"] { display: revert; }
+  html[lang="fr"] [data-lang="fr"], html[lang="en"] [data-lang="en"], html[lang="zh"] [data-lang="zh"] { display: revert; }
+  [lang="zh-Hans"] h1, [lang="zh-Hans"] h2 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
 </style>
 </head>
 <body>
 <main>
-  <p class="retour"><a href="index.html">← Eskapia — Aide / Help</a></p>
+  <p class="retour"><a href="index.html">← Eskapia — Aide / Help / 帮助</a></p>
   <div class="langues" role="group" aria-label="Langue / Language">
     <button type="button" data-choix="fr">FR</button>
     <button type="button" data-choix="en">EN</button>
+    <button type="button" data-choix="zh">中文</button>
   </div>
 
   <!-- ===================== FRANÇAIS ===================== -->
@@ -167,6 +169,60 @@
       <p>Eskapia is intended for people aged 15 and over. Under 15, the consent of a parent or guardian is required to create and use an account.</p>
     </div>
   </section>
+
+  <!-- ===================== 中文 ===================== -->
+  <section data-lang="zh" lang="zh-Hans">
+    <h1>Eskapia 隐私政策</h1>
+    <p class="maj">最后更新：2026 年 9 月 27 日</p>
+
+    <div class="carte">
+      <h2>谁对你的数据负责</h2>
+      <p>Eskapia 应用由一家正在法国注册成立的公司发布。公司注册完成后，其完整信息将在此公布。联系方式：
+        <a href="mailto:Eskapia.app@gmail.com" target="_blank" rel="noopener">Eskapia.app@gmail.com</a>。</p>
+
+      <h2>我们处理的数据</h2>
+      <ul>
+        <li><strong>账户</strong>：首次启动时自动生成的识别码，不含姓名或地址。如果你关联了账户，
+          还包括你的 Google 账户邮箱或你通过验证码验证的邮箱。</li>
+        <li><strong>个人资料</strong>：昵称、座右铭、你选择的头像（如有）、应用语言。</li>
+        <li><strong>游戏</strong>：已解锁的路线、游戏记录（开始、结束、完成的步骤、输入的答案、提示和罚时）、获得的奖章。</li>
+        <li><strong>购买</strong>：钥匙和付款记录（金额、币种、日期）。付款本身由 Apple 或 Google 处理：
+          我们从不接收你的银行卡信息。</li>
+        <li><strong>客服邮件</strong>：你的邮件内容，以及你选择附上的技术信息（识别码、应用版本、系统、语言）。</li>
+      </ul>
+
+      <h2>我们不收集的数据</h2>
+      <ul>
+        <li><strong>你的位置</strong>：仅在游戏过程中由你手机上的应用读取，用于确认你已到达某个地点。
+          它<strong>既不会发送到我们的服务器，也不会被保存</strong>。</li>
+        <li>没有广告，没有流量统计工具，不出售任何数据。</li>
+      </ul>
+
+      <h2>其他玩家可以看到的内容</h2>
+      <p>你的昵称、头像、座右铭、奖章以及排行榜成绩。你的邮箱地址永远不会被显示。</p>
+
+      <h2>我们为什么使用这些数据</h2>
+      <p>为了运行游戏和你的账户、生成排行榜、让你在另一部手机上找回进度，以及回复你的请求。
+        法律依据：履行你所使用的服务。</p>
+
+      <h2>数据存储在哪里</h2>
+      <p>存储于 <strong>Supabase</strong>（数据库、账户和头像），区域为欧盟（爱尔兰）。
+        验证码邮件由 <strong>Brevo</strong> 发送。头像通过公开地址访问，以便在排行榜中显示。</p>
+
+      <h2>保存多久</h2>
+      <p>只要你的账户存在就会保存。删除账户后，所有数据会被立即清除，仅保留一条<strong>匿名付款记录</strong>
+        （金额、币种、日期，与你无关联），用于会计用途。已使用的兑换码仍标记为已使用，但与你无关联。</p>
+
+      <h2>你的权利</h2>
+      <p>你可以写信至
+        <a href="mailto:Eskapia.app@gmail.com" target="_blank" rel="noopener">Eskapia.app@gmail.com</a>
+        访问、更正或删除你的数据，或索取数据副本。你也可以直接在应用中删除账户（设置 → 账户 → 删除我的账户）。
+        你可以向数据保护机构投诉（在法国为 <a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a>）。</p>
+
+      <h2>年龄</h2>
+      <p>Eskapia 面向 15 岁及以上的用户。15 岁以下用户需获得父母或监护人的同意才能创建和使用账户。</p>
+    </div>
+  </section>
 </main>
 <script>
   (function () {
@@ -180,7 +236,8 @@
     document.querySelectorAll('[data-choix]').forEach(function (b) {
       b.addEventListener('click', function () { choisir(b.getAttribute('data-choix')); });
     });
-    choisir((navigator.language || 'fr').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en');
+    var nav = (navigator.language || 'fr').toLowerCase();
+    choisir(nav.indexOf('fr') === 0 ? 'fr' : nav.indexOf('zh') === 0 ? 'zh' : 'en');
   })();
 </script>
 </body>

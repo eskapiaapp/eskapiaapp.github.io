@@ -41,7 +41,8 @@
   a { color: var(--accent); }
   footer { margin-top: 40px; color: var(--secondaire); font-size: 14px; }
   [data-lang] { display: none; }
-  html[lang="fr"] [data-lang="fr"], html[lang="en"] [data-lang="en"] { display: revert; }
+  html[lang="fr"] [data-lang="fr"], html[lang="en"] [data-lang="en"], html[lang="zh"] [data-lang="zh"] { display: revert; }
+  [lang="zh-Hans"] h1, [lang="zh-Hans"] h2 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
 </style>
 </head>
 <body>
@@ -49,6 +50,7 @@
   <div class="langues" role="group" aria-label="Langue / Language">
     <button type="button" data-choix="fr">FR</button>
     <button type="button" data-choix="en">EN</button>
+    <button type="button" data-choix="zh">中文</button>
   </div>
 
   <!-- ===================== FRANÇAIS ===================== -->
@@ -153,6 +155,54 @@
 
     <footer><a href="confidentialite.html">Privacy policy</a></footer>
   </section>
+
+  <!-- ===================== 中文 ===================== -->
+  <section data-lang="zh" lang="zh-Hans">
+    <h1>Eskapia — 帮助与联系</h1>
+    <p class="intro">Eskapia 是一款城市寻宝解谜游戏。第一条路线 <em>Lyon time travel</em>
+      将带你从圣让老城走到富维耶山，在现场解开一道道谜题。</p>
+
+    <h2>常见问题</h2>
+    <div class="groupe">
+      <details>
+        <summary>我的兑换码或钥匙无法使用</summary>
+        <p>每个兑换码只能使用一次。请检查输入，不要有空格。如果你付费购买的兑换码或钥匙被拒绝，
+          请附上你的识别码给我们写信：核实后我们会发给你一个新的兑换码。</p>
+      </details>
+      <details>
+        <summary>某个地点无法验证，或游戏卡住了</summary>
+        <p>请确认已允许 Eskapia 使用定位，并且你确实在现场。每个谜题地点至少需要 5 分钟，
+          一局游戏最长 24 小时。如果仍然卡住，请写信告诉我们是哪个地点。</p>
+      </details>
+      <details>
+        <summary>我要更换手机</summary>
+        <p>更换之前，请在“设置 → 账户”中将账户关联到 Google 或电子邮箱。在新手机上点击
+          “找回或切换账号”：你的进度、奖章和钥匙都会保留。</p>
+      </details>
+      <details>
+        <summary>我想退款</summary>
+        <p>购买通过 App Store 或 Google Play 完成，退款由它们直接处理。请在你的
+          <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">Apple</a> 或
+          <a href="https://play.google.com/store/account/orderhistory" target="_blank" rel="noopener">Google Play</a>
+          账户中申请。</p>
+      </details>
+      <details>
+        <summary>删除我的账户和数据</summary>
+        <p>在应用中：设置 → 账户 → “删除我的账户”，然后确认两次。你的账户和数据会立即被永久删除。
+          如果你已无法使用应用，请附上你的识别码（或账户关联的邮箱）给我们写信：我们会在 30 天内删除该账户。</p>
+      </details>
+    </div>
+
+    <h2>联系我们</h2>
+    <div class="groupe contact">
+      <p>仍然无法解决？请给我们写信。为了更快得到回复，请注明你的<strong>识别码</strong>：
+        它位于应用的“设置 → 帮助与联系”中，该页面的“给我们写信”按钮会自动附上它。</p>
+      <a class="email" href="mailto:Eskapia.app@gmail.com" target="_blank" rel="noopener">Eskapia.app@gmail.com</a><br>
+      <a class="bouton" href="mailto:Eskapia.app@gmail.com?subject=Eskapia%20%E2%80%94%20%E6%B1%82%E5%8A%A9" target="_blank" rel="noopener">给我们写信</a>
+    </div>
+
+    <footer><a href="confidentialite.html">隐私政策</a></footer>
+  </section>
 </main>
 <script>
   (function () {
@@ -166,7 +216,8 @@
     document.querySelectorAll('[data-choix]').forEach(function (b) {
       b.addEventListener('click', function () { choisir(b.getAttribute('data-choix')); });
     });
-    choisir((navigator.language || 'fr').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en');
+    var nav = (navigator.language || 'fr').toLowerCase();
+    choisir(nav.indexOf('fr') === 0 ? 'fr' : nav.indexOf('zh') === 0 ? 'zh' : 'en');
   })();
 </script>
 </body>
