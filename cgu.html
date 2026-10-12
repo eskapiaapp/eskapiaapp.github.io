@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eskapia — Conditions générales d’utilisation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fond: #FDF2E9; --surface: #FFFFFF; --texte: #1A1614; --secondaire: #8A7F77;
+    --accent: #F97316; --bordure: #EFE0D2;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte);
+    font: 16px/1.6 Inter, system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1, h2 { font-family: "IM Fell English", Georgia, serif; font-weight: 400; margin: 0; }
+  h1 { font-size: 36px; line-height: 1.15; }
+  h2 { font-size: 22px; margin: 28px 0 8px; }
+  .retour { margin: 0 0 8px; font-size: 14px; }
+  .maj { color: var(--secondaire); margin: 8px 0 0; font-size: 14px; }
+  .carte { background: var(--surface); border: 1px solid var(--bordure); border-radius: 16px;
+    padding: 4px 20px 20px; margin-top: 24px; }
+  p, li { color: #3b3430; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li + li { margin-top: 6px; }
+  a { color: var(--accent); }
+  /* Mentions à remplir avant publication : impossibles à manquer. */
+  mark { background: #FDE047; color: #1A1614; padding: 0 4px; border-radius: 4px; }
+  .langues { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 16px; }
+  .langues button { font: 600 14px Inter, sans-serif; padding: 6px 14px; border-radius: 999px;
+    border: 1px solid var(--bordure); background: var(--surface); color: var(--texte); cursor: pointer; }
+  .langues button[aria-pressed="true"] { background: var(--texte); color: #fff; border-color: var(--texte); }
+  [data-lang] { display: none; }
+  html[lang="fr"] [data-lang="fr"], html[lang="en"] [data-lang="en"], html[lang="zh"] [data-lang="zh"] { display: revert; }
+  [lang="zh-Hans"] h1, [lang="zh-Hans"] h2 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+</style>
+</head>
+<body>
+<main>
+  <p class="retour"><a href="index.html">← Eskapia — Aide / Help / 帮助</a></p>
+  <div class="langues" role="group" aria-label="Langue / Language">
+    <button type="button" data-choix="fr">FR</button>
+    <button type="button" data-choix="en">EN</button>
+    <button type="button" data-choix="zh">中文</button>
+  </div>
+
+  <!-- ===================== FRANÇAIS ===================== -->
+  <section data-lang="fr">
+    <h1>Conditions générales d’utilisation — Eskapia</h1>
+    <p class="maj">Version n°3 du 11/10/2026</p>
+
+    <div class="carte">
+      <h2>Article 1 — Définitions</h2>
+      <p>Dans les présentes CGU, on entend par :</p>
+      <ul>
+        <li>Application : l’application mobile Eskapia (anciennement CITY QUEST) et ses mises à jour, distribuée par l’App Store d’Apple et par Google Play.</li>
+        <li>Éditeur : Eskapia, nom commercial de Nathan DELPEUT, entrepreneur individuel, SIRET 13058222400015, 7 allée résidence Récamier, 69130 Écully, eskapia.app@gmail.com. Directeur de la publication : Nathan DELPEUT.</li>
+        <li>Hébergeur : Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapour 049513, legal@supabase.io (aucun numéro de téléphone publié), pour la base de données, les comptes et les photos de profil, hébergés dans la région Union européenne (Irlande). Les pages publiques de support et de confidentialité sont hébergées par GitHub, Inc. (GitHub Pages) : https://eskapiaapp.github.io/.</li>
+        <li>Utilisateur : toute personne qui installe ou utilise l’Application.</li>
+        <li>Compte : l’espace personnel rattaché à un Utilisateur.</li>
+        <li>Parcours : le jeu de piste « Lyon time travel », composé de cinq Étapes dont quatre lieux à énigmes, décrit à l’article 6.</li>
+        <li>Étape : l’un des cinq points du Parcours. Une Étape est soit un lieu à énigmes, soit un transit (le funiculaire).</li>
+        <li>Énigme : l’une des six questions posées sur un lieu à énigmes.</li>
+        <li>Partie : une tentative de réalisation du Parcours, du départ à l’arrivée ou à la clôture.</li>
+        <li>Clé : le droit d’accès au Parcours acheté directement dans l’Application.</li>
+        <li>Code : un code de déblocage qui ouvre le Parcours. Il est soit délivré gratuitement par l’Éditeur (bêta, support, geste commercial), soit vendu ou offert par un Vendeur autorisé dans les conditions du Titre B des CGV.</li>
+        <li>Vendeur autorisé : l’intermédiaire professionnel (hôtel, loueur de meublé ou hôte Airbnb, restaurant, conciergerie, office de tourisme) auquel l’Éditeur vend des Codes en vue de leur revente ou de leur remise à ses clients, dans les conditions du Titre B des CGV.</li>
+        <li>Classement : le tableau public des meilleurs temps.</li>
+        <li>Contenu utilisateur : le pseudonyme et la photo de profil déposés par l’Utilisateur.</li>
+      </ul>
+      <h2>Article 2 — Objet et documents applicables</h2>
+      <p>2.1. Les CGU règlent l’utilisation de l’Application, gratuite ou payante. Eskapia est un jeu de piste en extérieur dans le Vieux-Lyon et sur la colline de Fourvière, joué sur téléphone, contre la montre.</p>
+      <p>2.2. L’achat d’une Clé dans l’Application est régi par les Conditions générales de vente (CGV) de l’Éditeur. Un Code délivré par l’Éditeur est gratuit et ne relève d’aucune condition de vente ; un Code acquis auprès d’un Vendeur autorisé relève des conditions de vente de ce Vendeur, le Titre B des CGV régissant pour sa part la relation entre l’Éditeur et celui-ci. Le traitement des données personnelles est décrit dans la Politique de confidentialité, accessible dans l’Application (Paramètres &gt; Aide) et à l’adresse https://eskapiaapp.github.io/confidentialite.html.</p>
+      <p>2.3. En cas de contradiction sur une question liée à l’achat d’une Clé, les CGV prévalent.</p>
+      <h2>Article 3 — Acceptation</h2>
+      <p>3.1. Un Compte anonyme est créé au premier lancement de l’Application, sans e-mail ni mot de passe (article 5.1). Les CGU sont présentées à ce premier lancement ; l’Utilisateur les accepte en cochant une case avant de pouvoir commencer une Partie.</p>
+      <p>3.2. Les CGU restent consultables à tout moment dans Paramètres &gt; Aide et sur le site de support https://eskapiaapp.github.io/. Les versions antérieures sont conservées et communiquées sur simple demande.</p>
+      <h2>Article 4 — Conditions d’accès</h2>
+      <p>4.1. Âge et mineurs. L’Utilisateur doit avoir au moins 13 ans pour jouer seul. L’enfant de moins de 13 ans peut jouer à condition d’être accompagné physiquement d’un parent ou d’un titulaire de l’autorité parentale pendant toute la Partie.</p>
+      <p>4.2. L’Utilisateur de moins de 15 ans ne peut créer un Compte qu’avec l’accord d’un titulaire de l’autorité parentale.</p>
+      <p>4.3. Tout mineur, même âgé de 13 ans ou plus, joue sous la responsabilité d’un titulaire de l’autorité parentale, qui apprécie s’il peut se déplacer seul en ville.</p>
+      <p>4.4. Équipement. Le jeu nécessite un téléphone Android ou iOS compatible avec la version de l’Application publiée sur Google Play ou l’App Store ; la version minimale du système est indiquée sur la fiche de l’Application dans chaque store. Il faut la géolocalisation activée, une connexion Internet et une batterie suffisante pour environ 3 heures d’utilisation. Une batterie externe est recommandée.</p>
+      <p>4.5. Les frais de connexion, y compris d’itinérance à l’étranger, sont à la charge de l’Utilisateur.</p>
+      <p>4.6. Mise à jour. L’Éditeur peut exiger l’installation de la dernière version de l’Application pour garantir le bon fonctionnement du jeu et du Classement.</p>
+      <p>4.7. Nombre de Comptes par téléphone. L’Application limite à trois le nombre de Comptes ouverts depuis un même téléphone, celui créé au premier lancement compris.</p>
+      <h2>Article 5 — Compte</h2>
+      <p>5.1. Création. Un Compte anonyme est créé au premier lancement, sans e-mail ni mot de passe. Il porte un identifiant que l’Utilisateur retrouve dans Paramètres &gt; Aide et qu’il communique au support pour toute réclamation.</p>
+      <p>5.2. Rattachement. L’Utilisateur peut rattacher son Compte à une adresse e-mail (connexion par code à usage unique reçu par courriel) ou à un compte Google. Cela lui permet de le retrouver sur un autre appareil. La connexion par identifiant Apple n’est pas encore disponible.</p>
+      <p>5.3. Téléphone perdu ou réinitialisé. Un Compte non rattaché ne peut pas être récupéré en cas de perte, de vol, de changement ou de réinitialisation du téléphone, ou de désinstallation de l’Application. La progression est alors perdue et un Code utilisé reste consommé. L’Éditeur recommande fortement de rattacher le Compte avant la première Partie.</p>
+      <p>5.4. Un Compte par personne. Chaque personne ne peut faire figurer qu’un seul Compte au Classement. La limite technique de trois Comptes par téléphone (article 4.7) ne vaut pas autorisation d’en faire figurer plusieurs.</p>
+      <p>5.5. Confidentialité. L’Utilisateur garde ses identifiants confidentiels. Il signale sans délai tout usage frauduleux à eskapia.app@gmail.com.</p>
+      <p>5.6. Inactivité. Un Compte anonyme non rattaché et inactif pendant 3 ans peut être supprimé.</p>
+      <p>5.7. Changement de compte. Depuis Paramètres &gt; Compte, l’Utilisateur peut créer un nouveau Compte vierge ou revenir à un Compte existant. Quitter un Compte anonyme qui n’a jamais été rattaché le rend définitivement irrécupérable, avec sa progression et ses Clés ; l’Application en avertit avant de poursuivre.</p>
+      <h2>Article 6 — Le Parcours</h2>
+      <p>6.1. Composition. Le Parcours compte cinq Étapes, dans cet ordre imposé : la cathédrale Saint-Jean, le funiculaire F1 (transit), les vestiges gallo-romains de Fourvière (Théâtre antique et Odéon), la basilique de Fourvière et la Porte du Temps. Les quatre lieux à énigmes comptent six Énigmes chacun ; le transit n’en comporte aucune. Une Étape ne peut pas être validée avant la précédente.</p>
+      <p>6.2. Durée et effort. La durée indicative est de 3 heures, pour une distance d’environ 3,3 km et un dénivelé d’environ 140 m.</p>
+      <p>6.3. Accessibilité. Le Parcours comporte des escaliers, des pavés et des pentes marquées. Il n’est pas entièrement accessible aux personnes à mobilité réduite ni aux poussettes.</p>
+      <p>6.4. Horaires. Les horaires d’ouverture des sites varient selon les saisons et les événements. L’Utilisateur les vérifie avant de partir. Il est recommandé de commencer avant 20 h et de jouer de jour.</p>
+      <p>6.5. Adaptation du Parcours. Une Étape peut devenir inaccessible : fermeture, travaux, office religieux, manifestation, grand événement (Fête des Lumières notamment), mesure de sécurité ou décision des autorités. L’Éditeur peut alors remplacer l’Étape, la neutraliser ou permettre sa validation à distance. Le chronomètre et le Classement sont ajustés en conséquence, et l’Utilisateur en est informé dans l’Application.</p>
+      <h2>Article 7 — Déroulement et chronométrage</h2>
+      <p>7.1. Départ. La Partie commence lorsque l’Utilisateur confirme le départ dans l’Application. Un écran rappelle au préalable les règles de chronométrage, la durée maximale de 24 heures et l’obligation de se déplacer à pied.</p>
+      <p>7.2. Chronomètre. Le chronomètre est calculé par les serveurs de l’Éditeur, qui seuls enregistrent l’heure de départ et l’heure de fin. Il tourne en continu dès le départ, y compris si l’Application est fermée, si le réseau est coupé ou si le téléphone est éteint. Aucune pause n’est possible. Le temps retenu est la durée serveur entre le départ et la fin, arrondie à la seconde inférieure, augmentée des pénalités.</p>
+      <p>7.3. Validation des Étapes. L’arrivée sur une Étape est validée par la mesure de géolocalisation du téléphone, dans un rayon de 50 mètres. La mesure doit être récente et exploitable. La précision peut être réduite dans les rues étroites, les traboules et au pied des bâtiments. En cas d’échec, l’Utilisateur se place dans un endroit dégagé et vérifie que la géolocalisation est autorisée et activée. Hors le cas de l’article 6.5, l’Application ne propose aucune validation à distance : si une Étape reste invalidable, l’Utilisateur abandonne l’Étape dans les conditions de l’article 7.4 ou signale l’incident selon l’article 8.</p>
+      <p>7.4. Pénalités.</p>
+      <ul>
+        <li>Une bonne réponse n’ajoute aucune pénalité.</li>
+        <li>Un indice ajoute 5 minutes. Un indice déjà obtenu reste consultable sans nouvelle pénalité.</li>
+        <li>Passer une énigme ajoute 20 minutes.</li>
+        <li>Abandonner une Étape ajoute 20 minutes et donne accès au code nécessaire à la suite du Parcours.</li>
+      </ul>
+      <p>7.5. Fin de Partie. La Partie se termine à la validation de la Porte du Temps. Le temps final est le temps écoulé, augmenté des pénalités. Une Partie non terminée 24 heures après son départ est close automatiquement par le serveur : elle ne compte pas au Classement et ne rapporte aucune médaille. Elle ne peut pas être poursuivie ; l’Utilisateur recommence une nouvelle Partie depuis la première Étape, sans racheter l’accès au Parcours, qui reste acquis. Un compte à rebours est affiché à côté du chronomètre.</p>
+      <p>7.6. Rejouer. Une fois le Parcours déverrouillé, l’Utilisateur peut le rejouer sans limite. Une seule Partie peut être en cours à la fois : rejouer suppose la Partie précédente terminée ou close. Seul le meilleur temps de l’Utilisateur figure au Classement.</p>
+      <p>7.7. Jeu en groupe. Une Partie correspond à un Compte et à un téléphone. Un groupe peut jouer sur un seul téléphone : le Classement affiche alors le pseudonyme du Compte, et non les membres du groupe. Chaque téléphone utilisé pour jouer séparément nécessite sa propre Clé ou son propre Code.</p>
+      <p>7.8. Déplacements. Les déplacements entre Étapes se font exclusivement à pied. Le funiculaire est la seule exception, car il constitue une Étape du Parcours. L’usage de tout autre moyen de transport est interdit : voiture, taxi, VTC, bus, métro, vélo, trottinette ou tout autre engin. Une Partie réalisée en méconnaissance de cette règle est retirée du Classement ; des manquements répétés sont sanctionnés selon l’article 12.</p>
+      <p>7.9. Géolocalisation. La géolocalisation doit être autorisée et activée pendant toute la Partie : sans elle, l’Application ne peut pas valider l’arrivée sur les Étapes et la Partie ne progresse plus. L’Utilisateur peut retirer son autorisation à tout moment dans les réglages de son téléphone ; la Partie reste alors bloquée à l’Étape en cours, le chronomètre continuant de tourner, jusqu’à ce qu’il la rétablisse ou que la Partie soit close (article 7.5). La position est utilisée par le seul téléphone, pendant une Partie, pour comparer la distance à l’Étape : elle n’est ni transmise ni enregistrée par les serveurs de l’Éditeur, et n’est pas relevée en arrière-plan ni lorsque l’Application est fermée.</p>
+      <p>7.10. Temps minimal sur un lieu. Un lieu à énigmes ne peut être quitté avant 5 minutes depuis son ouverture, même toutes ses Énigmes résolues ou passées. L’abandon d’un lieu, et le forçage de la Porte du Temps, ne sont proposés qu’après 10 minutes passées sur l’Étape. Ces délais sont vérifiés par le serveur.</p>
+      <p>7.11. Parties hors Classement. Une Partie ne figure pas au Classement et ne rapporte aucune médaille lorsqu’elle a été close par expiration (article 7.5), lorsqu’elle n’a pas suivi toutes les Étapes du Parcours, ou lorsqu’elle a été touchée par un outil d’administration ou de test de l’Éditeur. Cette exclusion est définitive ; elle ne retire pas les médailles déjà acquises.</p>
+      <h2>Article 8 — Incidents techniques</h2>
+      <p>8.1. Panne imputable à l’Éditeur. En cas de panne de ses serveurs ou de défaut de l’Application ayant empêché ou faussé une Partie, l’Éditeur, après vérification, neutralise le temps perdu ou offre une nouvelle Partie classée.</p>
+      <p>8.2. Incident côté Utilisateur. Batterie déchargée, perte de réseau, géolocalisation refusée, défaut du téléphone ou mauvaise manipulation n’entraînent pas de neutralisation du temps : le chronomètre continue de tourner. L’Utilisateur peut reprendre sa Partie tant qu’elle n’est pas close.</p>
+      <p>8.3. Signalement. Tout incident se signale dans les 7 jours à eskapia.app@gmail.com, avec l’identifiant du Compte et une description. L’Éditeur répond dans un délai de 7 jours ouvrés.</p>
+      <p>8.4. Failles. L’Utilisateur qui découvre une faille est invité à la signaler. Il ne doit pas l’exploiter.</p>
+      <h2>Article 9 — Déverrouillage (Clé et Code)</h2>
+      <p>9.1. Moyens de déverrouillage. Le Parcours s’ouvre avec une Clé achetée dans l’Application, ou avec un Code de déblocage délivré gratuitement par l’Éditeur ou acquis auprès d’un Vendeur autorisé. L’Éditeur ne vend pas de Clé en dehors de l’Application.</p>
+      <p>9.2. Usage du Code. Un Code est à usage unique et ouvre le Parcours pour un seul Compte. Une fois utilisé, il ne peut être ni réactivé, ni transféré vers un autre Compte.</p>
+      <p>9.3. Validité. Un Code n’a pas de date d’expiration : il reste valable jusqu’à son utilisation, sous réserve de l’article 13.3.</p>
+      <p>9.4. Code d’une autre provenance. Un Code est destiné au seul Utilisateur à qui l’Éditeur ou un Vendeur autorisé l’a remis. L’Éditeur ne garantit aucun Code obtenu auprès d’un autre tiers, notamment par revente entre particuliers, échange ou site d’enchères, et peut désactiver un Code ainsi diffusé.</p>
+      <p>9.5. Code perdu ou divulgué. L’Utilisateur conserve son Code jusqu’à son activation. L’Éditeur n’est pas tenu de remplacer un Code perdu, détruit, divulgué ou utilisé par un tiers ; il peut, à sa discrétion, désactiver le Code non encore utilisé et en délivrer un nouveau. Toute demande se fait à eskapia.app@gmail.com, avec l’identifiant du Compte.</p>
+      <p>9.6. Saisie du Code. La saisie d’un Code inconnu, déjà utilisé ou désactivé n’ouvre aucun accès et ne consomme rien. L’Éditeur peut limiter le nombre de tentatives et désactiver un Code en cas de saisies répétées ou d’usage frauduleux.</p>
+      <p>9.7. Révocation et remboursement. L’Éditeur peut révoquer une Clé ou un Code obtenus frauduleusement, notamment par génération illicite. Une Clé remboursée par le store avant d’avoir ouvert le Parcours est retirée du Compte. Une Clé qui a déjà ouvert le Parcours n’est pas remboursable (article 9.9) ; si un remboursement est néanmoins accordé par Apple ou Google, l’accès déjà ouvert est conservé et l’Éditeur peut appliquer les sanctions de l’article 12 en cas d’abus répété. Révoquer un accès n’efface ni les Parties jouées ni le Classement.</p>
+      <p>9.8. Achat. Une Clé s’achète exclusivement par le système d’achat intégré d’Apple ou de Google, au prix affiché par le store dans la devise et avec les taxes du pays de l’Utilisateur (29,99 € en France au 11 octobre 2026). L’Éditeur ne reçoit aucune coordonnée bancaire. L’achat est régi par les CGV de l’Éditeur et par les conditions du store.</p>
+      <p>9.9. Clé utilisée non remboursable. Une Clé qui a servi à ouvrir le Parcours n’est pas remboursable. Ce rappel figure sur l’écran d’achat et dans l’aide de l’Application. Le remboursement d’un achat intégré est accordé par Apple ou par Google, selon leurs propres conditions, sur lesquelles l’Éditeur n’a pas la main.</p>
+      <p>9.10. Pas de restauration d’achat. Une Clé est un contenu consommable : elle n’est pas restaurable depuis le store. Les Clés vivent dans le Compte Eskapia ; l’Utilisateur les retrouve en se reconnectant à son Compte (article 5.2), non en réinstallant l’Application.</p>
+      <p>9.11. Délai d’attribution. La Clé est créditée par le serveur de l’Éditeur à la confirmation du paiement par le store, en général en quelques secondes. Un paiement en attente de validation par le store ne crédite rien tant qu’il n’est pas confirmé. Si la Clé n’apparaît pas, l’Utilisateur écrit à eskapia.app@gmail.com avec l’identifiant de son Compte (Paramètres &gt; Aide).</p>
+      <h2>Article 10 — Sécurité et comportement sur le Parcours</h2>
+      <p>Le jeu se déroule sur la voie publique et dans des lieux que l’Éditeur ne contrôle pas. Les indications de l’Application ne sont ni des instructions de circulation ni une garantie que le passage est sûr. L’Utilisateur s’engage à :</p>
+      <ul>
+        <li>respecter le Code de la route et emprunter trottoirs et passages piétons ;</li>
+        <li>ne jamais regarder son écran en marchant ou en traversant, et ne pas courir ;</li>
+        <li>ne prendre aucun risque pour gagner du temps : aucun classement ne le justifie. En cas de danger, il abandonne l’Étape ou la Partie ;</li>
+        <li>adapter sa participation à son état de santé, à la météo (chaleur, orage, pluie rendant escaliers et pavés glissants) et au dénivelé. Il prévoit chaussures adaptées et eau ;</li>
+        <li>ne pas jouer sous l’emprise d’alcool ou de stupéfiants ;</li>
+        <li>respecter les lieux de culte : silence, tenue correcte, pas de jeu pendant les offices ;</li>
+        <li>respecter les traboules et cours, qui sont des propriétés privées ouvertes au public par convention : silence, horaires d’ouverture, portes refermées, respect des riverains ;</li>
+        <li>respecter les horaires des sites, ne pas pénétrer dans les zones fermées, ne pas escalader les vestiges du Théâtre antique, ne rien déplacer ni dégrader ;</li>
+        <li>se munir d’un titre de transport TCL valable pour le funiculaire, non inclus dans le prix ;</li>
+        <li>tenir en laisse et sous contrôle tout animal l’accompagnant, dans le respect des règles propres à chaque site ;</li>
+        <li>ne pas utiliser de drone et respecter le droit à l’image des personnes qu’il photographie ou filme.</li>
+      </ul>
+      <p>En cas d’urgence, composer le 112 (numéro d’urgence européen), le 15 (SAMU), le 17 (police) ou le 18 (pompiers).</p>
+      <h2>Article 11 — Profil public et Classement</h2>
+      <p>11.1. Informations visibles. Le pseudonyme, la photo de profil, le meilleur temps et trois médailles au choix de l’Utilisateur sont visibles des autres joueurs. La photo de profil est un fichier JPEG, PNG ou WebP de moins de 2 Mo ; elle est accessible par une adresse Internet publique, nécessaire à son affichage dans le Classement et sur les profils.</p>
+      <p>11.2. Choix du pseudonyme et visibilité. Le pseudonyme par défaut est « Joueur » ; l’Utilisateur le modifie depuis son profil. Toute Partie terminée dans les conditions de l’article 11.6 figure au Classement public sous ce pseudonyme. L’Utilisateur qui ne souhaite pas y figurer en demande le retrait à eskapia.app@gmail.com ; l’Éditeur y procède sans délai.</p>
+      <p>11.3. Contenus interdits. Sont interdits les pseudonymes et avatars :</p>
+      <ul>
+        <li>injurieux, discriminants, violents ou à caractère sexuel ;</li>
+        <li>contraires à la loi ;</li>
+        <li>usurpant l’identité d’autrui ;</li>
+        <li>représentant une personne identifiable sans son accord ;</li>
+        <li>contenant des données personnelles d’un tiers, des coordonnées, de la publicité, des liens ou des marques de tiers.</li>
+      </ul>
+      <p>11.4. Signalement. Toute personne peut signaler un Contenu utilisateur via eskapia.app@gmail.com. Le signalement indique les raisons et, si possible, le pseudonyme concerné.</p>
+      <p>11.5. Modération. L’Éditeur peut modifier ou supprimer un Contenu utilisateur contraire aux CGU. Il informe l’Utilisateur de sa décision et de ses motifs. L’Utilisateur peut la contester à eskapia.app@gmail.com dans les 15 jours ; l’Éditeur réexamine alors la décision.</p>
+      <p>11.6. Règles du Classement. Le Classement est établi sur le meilleur temps final de chaque Compte, pour les seules Parties terminées dans les 24 heures, géolocalisation activée et à pied, et non exclues par l’article 7.11. En cas d’égalité, les Comptes concernés partagent le même rang : deux premiers ex æquo sont suivis d’un troisième (1, 1, 3). L’Application affiche les dix meilleurs temps et, si elle n’y figure pas, la ligne de l’Utilisateur. L’Éditeur peut organiser des classements périodiques (mensuels, saisonniers) ; il annonce toute remise à zéro dans l’Application au moins 15 jours à l’avance.</p>
+      <p>11.7. Médailles et lots. Les médailles actuelles sont : Premiers pas, Explorateur, Vif comme l’éclair, Tête froide, Sans faute, Numéro un, Top 10 et Bêta-testeur. Leurs conditions sont indiquées dans l’Application et peuvent évoluer ; une médaille acquise reste acquise. Les médailles n’ont aucune valeur marchande et ne sont ni échangeables ni cessibles. Le Classement ne donne droit à aucun lot, sauf règlement de concours distinct.</p>
+      <h2>Article 12 — Triche et sanctions</h2>
+      <p>12.1. Pratiques interdites. Constituent notamment de la triche :</p>
+      <ul>
+        <li>la falsification de position GPS ;</li>
+        <li>l’usage d’émulateurs, d’applications modifiées ou d’outils automatisés ;</li>
+        <li>l’exploitation d’une faille ;</li>
+        <li>la falsification des données envoyées à l’Application ou à ses serveurs ;</li>
+        <li>l’utilisation de plusieurs Comptes pour fausser le Classement, notamment en contournant la limite de l’article 4.7 ;</li>
+        <li>l’usage d’un moyen de transport interdit par l’article 7.8.</li>
+      </ul>
+      <p>12.2. Sanctions. Selon la gravité et la répétition des faits, l’Éditeur peut :</p>
+      <ul>
+        <li>annuler un temps ;</li>
+        <li>retirer des médailles ;</li>
+        <li>exclure l’Utilisateur du Classement ;</li>
+        <li>suspendre temporairement le Compte ;</li>
+        <li>le résilier.</li>
+      </ul>
+      <p>La sanction est proportionnée et motivée. L’Utilisateur peut la contester dans les 15 jours à eskapia.app@gmail.com.</p>
+      <p>12.3. Remboursement. En cas de fraude avérée, la Clé ou le Code ne sont pas remboursés.</p>
+      <h2>Article 13 — Disponibilité et évolution du service</h2>
+      <p>13.1. Interruptions. L’Éditeur s’efforce d’assurer un accès continu à l’Application. Il peut l’interrompre pour maintenance, si possible hors des heures de forte affluence et en prévenant les Utilisateurs.</p>
+      <p>13.2. Évolutions. L’Éditeur peut faire évoluer les énigmes et l’Application sans modifier les caractéristiques essentielles du Parcours.</p>
+      <p>13.3. Arrêt du service. En cas d’arrêt définitif du jeu, l’Éditeur prévient les Utilisateurs au moins 3 mois à l’avance.</p>
+      <ul>
+        <li>Les Clés et Codes non utilisés peuvent être activés et joués jusqu’à la date d’arrêt.</li>
+        <li>Après cette date, les Clés achetées dans l’Application et non utilisées sont remboursées par l’Éditeur.</li>
+        <li>Un Code non utilisé à la date d’arrêt devient inutilisable. Un Code délivré gratuitement par l’Éditeur ne donne lieu à aucun remboursement ; un Code acquis auprès d’un Vendeur autorisé est remboursé par celui-ci selon ses propres conditions, l’Éditeur remboursant pour sa part le Vendeur autorisé dans les conditions de l’article B10 des CGV.</li>
+      </ul>
+      <h2>Article 14 — Données personnelles</h2>
+      <p>14.1. Responsable du traitement. L’Éditeur est responsable du traitement des données personnelles collectées via l’Application. Ces traitements sont décrits dans la Politique de confidentialité, qui précise les finalités, les bases légales, les durées de conservation, les destinataires et les éventuels transferts hors de l’Union européenne.</p>
+      <p>14.2. Géolocalisation. La position est utilisée par le seul téléphone de l’Utilisateur, pendant une Partie, pour comparer la distance à l’Étape et autoriser sa validation. Elle n’est ni transmise ni enregistrée par les serveurs de l’Éditeur, et n’est pas relevée lorsque l’Application est en arrière-plan ou fermée. L’Utilisateur peut retirer son autorisation à tout moment dans les réglages de son téléphone ; les conséquences sur la Partie sont décrites à l’article 7.9.</p>
+      <p>14.3. Mineurs. Le Compte d’un Utilisateur de moins de 15 ans n’est créé qu’avec l’accord d’un titulaire de l’autorité parentale (article 4.2).</p>
+      <p>14.4. Droits de l’Utilisateur. L’Utilisateur dispose des droits d’accès, de rectification, d’effacement, d’opposition, de limitation du traitement et de portabilité, ainsi que du droit de retirer son consentement à tout moment et de définir des directives relatives au sort de ses données après son décès. Il les exerce à eskapia.app@gmail.com. Il peut aussi introduire une réclamation auprès de la CNIL (www.cnil.fr).</p>
+      <p>14.5. Suppression du Compte. La suppression du Compte efface le profil, la photo de profil, la progression, les Parties, les médailles, les Clés non utilisées et les identités Google ou e-mail rattachées, ainsi que la fiche client ouverte chez le prestataire de gestion des achats. Une trace comptable de chaque achat (montant, devise, date), sans lien avec l’Utilisateur, est conservée pour satisfaire aux obligations comptables et fiscales. Apple et Google conservent leurs propres preuves d’achat selon leurs politiques.</p>
+      <p>14.6. Prestataires. L’Éditeur recourt à Supabase Pte. Ltd., société singapourienne (hébergement de la base, des comptes et des photos dans la région Union européenne — Irlande), Brevo (envoi des codes de connexion par courriel), RevenueCat, Inc. (gestion des achats intégrés, États-Unis) ainsi qu’Apple et Google (paiement, connexion, distribution). La Politique de confidentialité en donne le détail et les garanties applicables aux transferts hors de l’Union européenne.</p>
+      <h2>Article 15 — Propriété intellectuelle</h2>
+      <p>15.1. Titularité. L’Application, ses textes, énigmes, illustrations, sons, bases de données, ainsi que les marques et logos Eskapia (anciennement CITY QUEST), sont la propriété exclusive de l’Éditeur et protégés par le droit de la propriété intellectuelle. Aucun droit n’est cédé à l’Utilisateur, hormis la licence prévue à l’article 15.2.</p>
+      <p>15.2. Licence d’utilisation. L’Utilisateur reçoit un droit personnel, non exclusif et non cessible d’utiliser l’Application pour son usage privé.</p>
+      <p>15.3. Interdictions. Sont interdits, sauf exceptions prévues par la loi :</p>
+      <ul>
+        <li>la reproduction, la décompilation et l’extraction de contenus ;</li>
+        <li>la diffusion des solutions des énigmes, quel que soit le support ;</li>
+        <li>toute utilisation commerciale (visites guidées payantes, agences, team building) sans autorisation écrite de l’Éditeur.</li>
+      </ul>
+      <p>15.4. Contenus utilisateur. L’Utilisateur autorise l’Éditeur à afficher son pseudonyme et sa photo de profil dans l’Application, y compris dans le Classement public et sur sa fiche de joueur, pendant la durée de vie de son Compte. Il garantit détenir les droits sur la photo qu’il dépose et disposer de l’accord des personnes qui y figurent.</p>
+      <h2>Article 16 — Responsabilité</h2>
+      <p>16.1. Responsabilité de l’Éditeur. L’Éditeur répond des dommages causés par un manquement à ses obligations.</p>
+      <p>16.2. Exclusions. Il n’est pas responsable des dommages résultant :</p>
+      <ul>
+        <li>du non-respect de l’article 10 ;</li>
+        <li>du fait d’un tiers imprévisible que l’Éditeur ne pouvait empêcher ;</li>
+        <li>d’un cas de force majeure au sens de l’article 1218 du Code civil ;</li>
+        <li>d’un défaut de l’équipement ou de la connexion de l’Utilisateur ;</li>
+        <li>d’une imprécision ou d’une indisponibilité des mesures de géolocalisation du téléphone de l’Utilisateur ;</li>
+        <li>de la perte d’objets personnels pendant la Partie.</li>
+      </ul>
+      <p>16.3. Responsabilité de l’Utilisateur. L’Utilisateur répond des dommages qu’il cause aux tiers et aux sites visités.</p>
+      <p>16.4. Limites des exclusions. Rien dans les CGU ne limite la responsabilité de l’Éditeur en cas de dommage corporel causé par sa faute, ni les garanties légales dues au consommateur.</p>
+      <h2>Article 17 — Durée et suppression du Compte</h2>
+      <p>17.1. Durée. Les CGU s’appliquent pour une durée indéterminée.</p>
+      <p>17.2. Suppression par l’Utilisateur. L’Utilisateur peut supprimer son Compte à tout moment depuis Paramètres &gt; Compte &gt; Supprimer mon compte. La suppression est définitive, dans les conditions de l’article 14.5 : elle efface la progression, le temps, les médailles, les Clés non utilisées et le profil public. Un nouveau Compte vierge est ensuite créé sur le téléphone. Un Code utilisé ou une Clé activée restent consommés ; le remboursement éventuel d’une Clé relève des CGV et de l’article 9.9.</p>
+      <p>17.3. Résiliation par l’Éditeur. L’Éditeur peut résilier un Compte en cas de manquement grave, après mise en demeure restée sans effet pendant 8 jours, sauf urgence ou fraude avérée.</p>
+      <h2>Article 18 — Modification des CGU</h2>
+      <p>18.1. Préavis. L’Éditeur notifie toute modification substantielle dans l’Application au moins 30 jours avant son entrée en vigueur. Une modification imposée par la loi ou par la sécurité des joueurs peut s’appliquer immédiatement.</p>
+      <p>18.2. Refus. L’Utilisateur qui refuse les nouvelles CGU peut supprimer son Compte avant leur entrée en vigueur.</p>
+      <p>18.3. Parties en cours et accès acquis. Les modifications ne s’appliquent pas aux Parties en cours et ne remettent pas en cause l’accès au Parcours déjà acquis.</p>
+      <h2>Article 19 — Contact et réclamations</h2>
+      <p>Toute question ou réclamation s’adresse à eskapia.app@gmail.com ou à Eskapia, 7 allée résidence Récamier, 69130 Écully. L’Éditeur répond dans un délai de 15 jours.</p>
+      <h2>Article 20 — Dispositions diverses</h2>
+      <p>20.1. Nullité partielle. Si une clause est déclarée nulle, les autres clauses restent applicables.</p>
+      <p>20.2. Non-renonciation. Le fait pour l’Éditeur de ne pas se prévaloir d’une clause ne vaut pas renonciation à l’invoquer plus tard.</p>
+      <p>20.3. Langue. La version française des CGU fait foi. Les traductions sont fournies à titre informatif.</p>
+      <p>20.4. Preuve. Les données enregistrées par les serveurs de l’Éditeur — départ et fin des Parties, actions de jeu, indices, pénalités, déblocages et achats — font foi jusqu’à preuve contraire. La position de l’Utilisateur n’est pas enregistrée par ces serveurs (articles 7.9 et 14.2) : elle ne peut donc servir de preuve ni pour lui ni contre lui.</p>
+      <h2>Article 21 — Droit applicable et litiges</h2>
+      <p>21.1. Droit applicable. Les CGU sont soumises au droit français. L’Utilisateur consommateur résidant dans un autre pays de l’Union européenne conserve le bénéfice des dispositions protectrices de la loi de son pays.</p>
+      <p>21.2. Médiation. En cas de litige, l’Utilisateur adresse d’abord une réclamation écrite à l’Éditeur. À défaut de solution sous 2 mois, il peut saisir gratuitement le médiateur de la consommation dont relève l’Éditeur : Médiation Tourisme et Voyage (MTV), Médiateur du Tourisme et du Voyage, BP 80303, 75823 Paris Cedex 17, https://www.mtv.travel. La saisine du médiateur intervient dans un délai d’un an à compter de la réclamation écrite adressée à l’Éditeur.</p>
+      <p>21.3. Tribunaux compétents. À défaut d’accord, le litige est porté devant les tribunaux compétents. Le consommateur peut saisir celui de son domicile.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <section data-lang="en">
+    <h1>Terms of use — Eskapia</h1>
+    <p class="maj">Version 3 — 11 October 2026</p>
+
+    <div class="carte">
+      <p class="maj"><strong>Translation for information only.</strong> Under article 20.3, the French version of these terms is the binding one. Where this translation and the French text differ, the French text prevails.</p>
+      <h2>Article 1 — Definitions</h2>
+      <p>In these terms of use:</p>
+      <ul>
+        <li>App: the Eskapia mobile application (formerly CITY QUEST) and its updates, distributed through Apple’s App Store and Google Play.</li>
+        <li>Publisher: Eskapia, trading name of Nathan DELPEUT, sole trader, SIRET 13058222400015, 7 allée résidence Récamier, 69130 Écully, France, eskapia.app@gmail.com. Publication director: Nathan DELPEUT.</li>
+        <li>Host: Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapore 049513, legal@supabase.io (no published telephone number), for the database, the accounts and the profile pictures, hosted in the European Union region (Ireland). The public support and privacy pages are hosted by GitHub, Inc. (GitHub Pages): https://eskapiaapp.github.io/.</li>
+        <li>User: any person who installs or uses the App.</li>
+        <li>Account: the personal space attached to a User.</li>
+        <li>Trail: the “Lyon time travel” trail game, made up of five Steps of which four are puzzle locations, described in article 6.</li>
+        <li>Step: one of the five points of the Trail. A Step is either a puzzle location or a transit (the funicular).</li>
+        <li>Puzzle: one of the six questions asked at a puzzle location.</li>
+        <li>Game: one attempt at completing the Trail, from start to finish or to closure.</li>
+        <li>Key: the right of access to the Trail, purchased directly in the App.</li>
+        <li>Code: an unlock code that opens the Trail. It is either issued free of charge by the Publisher (beta, support, goodwill), or sold or given by an Authorised Reseller under title B of the terms of sale.</li>
+        <li>Authorised Reseller: the professional intermediary (hotel, short-term rental or Airbnb host, restaurant, concierge service, tourist office) to whom the Publisher sells Codes for resale or for giving to its own customers, under title B of the terms of sale.</li>
+        <li>Leaderboard: the public table of best times.</li>
+        <li>User content: the nickname and profile picture submitted by the User.</li>
+      </ul>
+      <h2>Article 2 — Purpose and applicable documents</h2>
+      <p>2.1. These terms govern the use of the App, whether free or paid. Eskapia is an outdoor trail game in Vieux-Lyon and on the Fourvière hill, played on a phone, against the clock.</p>
+      <p>2.2. The purchase of a Key in the App is governed by the Publisher’s terms of sale. A Code issued by the Publisher is free of charge and falls under no terms of sale; a Code obtained from an Authorised Reseller falls under that Reseller’s own terms of sale, while title B of the terms of sale governs the relationship between the Publisher and that Reseller. The processing of personal data is described in the Privacy policy, available in the App (Settings &gt; Help) and at https://eskapiaapp.github.io/confidentialite.html.</p>
+      <p>2.3. In the event of any conflict on a matter relating to the purchase of a Key, the terms of sale prevail.</p>
+      <h2>Article 3 — Acceptance</h2>
+      <p>3.1. An anonymous Account is created on first launch of the App, with no e-mail address and no password (article 5.1). These terms are presented at that first launch; the User accepts them by ticking a box before being able to start a Game.</p>
+      <p>3.2. These terms remain available at any time in Settings &gt; Help and on the support site https://eskapiaapp.github.io/. Previous versions are kept and provided on request.</p>
+      <h2>Article 4 — Conditions of access</h2>
+      <p>4.1. Age and minors. The User must be at least 13 years old to play alone. A child under 13 may play provided a parent or legal guardian is physically present throughout the Game.</p>
+      <p>4.2. A User under 15 may only create an Account with the consent of a parent or legal guardian.</p>
+      <p>4.3. Any minor, even aged 13 or over, plays under the responsibility of a parent or legal guardian, who judges whether they may move around the city alone.</p>
+      <p>4.4. Equipment. The game requires an Android or iOS phone compatible with the version of the App published on Google Play or the App Store; the minimum operating system version is stated on the App’s listing in each store. Location services must be enabled, along with an internet connection and a battery sufficient for about 3 hours of use. A power bank is recommended.</p>
+      <p>4.5. Connection charges, including roaming charges abroad, are borne by the User.</p>
+      <p>4.6. Updates. The Publisher may require the latest version of the App to be installed in order to ensure that the game and the Leaderboard work correctly.</p>
+      <p>4.7. Number of Accounts per phone. The App limits to three the number of Accounts opened from the same phone, including the one created on first launch.</p>
+      <h2>Article 5 — Account</h2>
+      <p>5.1. Creation. An anonymous Account is created on first launch, with no e-mail address and no password. It carries an identifier that the User can find in Settings &gt; Help and which must be given to support with any claim.</p>
+      <p>5.2. Linking. The User may link their Account to an e-mail address (sign-in by one-time code received by e-mail) or to a Google account. This allows them to recover it on another device. Sign-in with an Apple ID is not yet available.</p>
+      <p>5.3. Lost or reset phone. An Account that has not been linked cannot be recovered if the phone is lost, stolen, changed or reset, or if the App is uninstalled. Progress is then lost and a used Code remains consumed. The Publisher strongly recommends linking the Account before the first Game.</p>
+      <p>5.4. One Account per person. Each person may have only one Account on the Leaderboard. The technical limit of three Accounts per phone (article 4.7) is not permission to enter several.</p>
+      <p>5.5. Confidentiality. The User keeps their credentials confidential. They must report any fraudulent use without delay to eskapia.app@gmail.com.</p>
+      <p>5.6. Inactivity. An anonymous Account that has not been linked and has been inactive for 3 years may be deleted.</p>
+      <p>5.7. Switching accounts. From Settings &gt; Account, the User may create a new blank Account or return to an existing one. Leaving an anonymous Account that has never been linked makes it permanently unrecoverable, together with its progress and its Keys; the App warns before proceeding.</p>
+      <h2>Article 6 — The Trail</h2>
+      <p>6.1. Composition. The Trail has five Steps, in this fixed order: Saint-Jean cathedral, the F1 funicular (transit), the Gallo-Roman remains of Fourvière (Ancient Theatre and Odeon), the Fourvière basilica and the Gate of Time. The four puzzle locations have six Puzzles each; the transit has none. A Step cannot be validated before the previous one.</p>
+      <p>6.2. Duration and effort. The indicative duration is 3 hours, over a distance of about 3.3 km with about 140 m of elevation gain.</p>
+      <p>6.3. Accessibility. The Trail includes stairs, cobblestones and steep slopes. It is not fully accessible to people with reduced mobility or to pushchairs.</p>
+      <p>6.4. Opening hours. The opening hours of the sites vary with the seasons and with events. The User checks them before setting out. Starting before 8 p.m. and playing in daylight is recommended.</p>
+      <p>6.5. Adapting the Trail. A Step may become inaccessible: closure, works, religious service, demonstration, major event (the Fête des Lumières in particular), security measure or decision of the authorities. The Publisher may then replace the Step, neutralise it or allow it to be validated remotely. The clock and the Leaderboard are adjusted accordingly, and the User is informed in the App.</p>
+      <h2>Article 7 — Playing and timing</h2>
+      <p>7.1. Start. The Game begins when the User confirms the start in the App. A screen first recalls the timing rules, the maximum duration of 24 hours and the obligation to travel on foot.</p>
+      <p>7.2. Clock. The clock is computed by the Publisher’s servers, which alone record the start time and the finish time. It runs continuously from the start, including if the App is closed, if the network is lost or if the phone is switched off. No pause is possible. The time recorded is the server duration between start and finish, rounded down to the second, plus penalties.</p>
+      <p>7.3. Validating Steps. Arrival at a Step is validated by the phone’s location measurement, within a radius of 50 metres. The measurement must be recent and usable. Accuracy may be reduced in narrow streets, in traboules and at the foot of buildings. If validation fails, the User should move to an open area and check that location services are permitted and enabled. Other than in the case of article 6.5, the App offers no remote validation: if a Step remains impossible to validate, the User abandons the Step under article 7.4 or reports the incident under article 8.</p>
+      <p>7.4. Penalties.</p>
+      <ul>
+        <li>A correct answer adds no penalty.</li>
+        <li>A hint adds 5 minutes. A hint already obtained remains viewable with no further penalty.</li>
+        <li>Skipping a puzzle adds 20 minutes.</li>
+        <li>Abandoning a Step adds 20 minutes and gives access to the code needed to continue the Trail.</li>
+      </ul>
+      <p>7.5. End of Game. The Game ends when the Gate of Time is validated. The final time is the elapsed time plus penalties. A Game not finished 24 hours after its start is closed automatically by the server: it does not count towards the Leaderboard and earns no medal. It cannot be continued; the User starts a new Game from the first Step, without buying access to the Trail again, which remains acquired. A countdown is shown next to the clock.</p>
+      <p>7.6. Replaying. Once the Trail is unlocked, the User may replay it without limit. Only one Game may be in progress at a time: replaying requires the previous Game to be finished or closed. Only the User’s best time appears on the Leaderboard.</p>
+      <p>7.7. Playing as a group. One Game corresponds to one Account and one phone. A group may play on a single phone: the Leaderboard then shows the Account’s nickname, not the members of the group. Each phone used to play separately requires its own Key or its own Code.</p>
+      <p>7.8. Travel. Travel between Steps is on foot only. The funicular is the sole exception, because it is itself a Step of the Trail. The use of any other means of transport is prohibited: car, taxi, ride-hailing, bus, metro, bicycle, scooter or any other vehicle. A Game played in breach of this rule is removed from the Leaderboard; repeated breaches are sanctioned under article 12.</p>
+      <p>7.9. Location. Location services must be permitted and enabled throughout the Game: without them, the App cannot validate arrival at Steps and the Game stops progressing. The User may withdraw permission at any time in their phone settings; the Game then remains blocked at the current Step, with the clock still running, until they restore it or the Game is closed (article 7.5). The position is used by the phone alone, during a Game, to compare the distance to the Step: it is neither transmitted to nor recorded by the Publisher’s servers, and is not read in the background or when the App is closed.</p>
+      <p>7.10. Minimum time at a location. A puzzle location cannot be left until 5 minutes after it was opened, even with all its Puzzles solved or skipped. Abandoning a location, and forcing the Gate of Time, are only offered after 10 minutes spent at the Step. These delays are checked by the server.</p>
+      <p>7.11. Games outside the Leaderboard. A Game does not appear on the Leaderboard and earns no medal where it was closed by expiry (article 7.5), where it did not follow all the Steps of the Trail, or where it was touched by an administration or test tool of the Publisher. This exclusion is final; it does not withdraw medals already earned.</p>
+      <h2>Article 8 — Technical incidents</h2>
+      <p>8.1. Failure attributable to the Publisher. In the event of a failure of its servers or a defect of the App which prevented or distorted a Game, the Publisher, after verification, neutralises the time lost or offers a new ranked Game.</p>
+      <p>8.2. Incident on the User’s side. A flat battery, loss of network, refused location permission, a phone fault or mishandling do not lead to the time being neutralised: the clock keeps running. The User may resume their Game as long as it is not closed.</p>
+      <p>8.3. Reporting. Any incident must be reported within 7 days to eskapia.app@gmail.com, with the Account identifier and a description. The Publisher replies within 7 working days.</p>
+      <p>8.4. Vulnerabilities. A User who discovers a vulnerability is invited to report it. They must not exploit it.</p>
+      <h2>Article 9 — Unlocking (Key and Code)</h2>
+      <p>9.1. Means of unlocking. The Trail opens with a Key purchased in the App, or with an unlock Code issued free of charge by the Publisher or obtained from an Authorised Reseller. The Publisher does not sell Keys outside the App.</p>
+      <p>9.2. Use of a Code. A Code is single-use and opens the Trail for one Account only. Once used, it can be neither reactivated nor transferred to another Account.</p>
+      <p>9.3. Validity. A Code has no expiry date: it remains valid until used, subject to article 13.3.</p>
+      <p>9.4. Code from another source. A Code is intended solely for the User to whom the Publisher or an Authorised Reseller gave it. The Publisher gives no warranty for any Code obtained from any other third party, in particular by resale between individuals, exchange or auction site, and may deactivate a Code circulated in that way.</p>
+      <p>9.5. Lost or disclosed Code. The User keeps their Code safe until it is activated. The Publisher is not required to replace a Code that is lost, destroyed, disclosed or used by a third party; it may, at its discretion, deactivate the unused Code and issue a new one. Any request is made to eskapia.app@gmail.com, with the Account identifier.</p>
+      <p>9.6. Entering a Code. Entering an unknown, already used or deactivated Code opens no access and consumes nothing. The Publisher may limit the number of attempts and deactivate a Code in the event of repeated entries or fraudulent use.</p>
+      <p>9.7. Revocation and refund. The Publisher may revoke a Key or a Code obtained fraudulently, in particular by unlawful generation. A Key refunded by the store before it has opened the Trail is removed from the Account. A Key that has already opened the Trail is not refundable (article 9.9); if a refund is nevertheless granted by Apple or Google, the access already opened is kept and the Publisher may apply the sanctions of article 12 in the event of repeated abuse. Revoking access erases neither the Games played nor the Leaderboard.</p>
+      <p>9.8. Purchase. A Key is purchased exclusively through Apple’s or Google’s in-app purchase system, at the price displayed by the store in the currency and with the taxes of the User’s country (€29.99 in France as at 11 October 2026). The Publisher receives no bank details. The purchase is governed by the Publisher’s terms of sale and by the store’s own terms.</p>
+      <p>9.9. A used Key is not refundable. A Key that has served to open the Trail is not refundable. This reminder appears on the purchase screen and in the App’s help. The refund of an in-app purchase is granted by Apple or by Google, under their own terms, over which the Publisher has no control.</p>
+      <p>9.10. No purchase restore. A Key is consumable content: it cannot be restored from the store. Keys live in the Eskapia Account; the User recovers them by signing back in to their Account (article 5.2), not by reinstalling the App.</p>
+      <p>9.11. Crediting time. The Key is credited by the Publisher’s server when the store confirms payment, generally within a few seconds. A payment awaiting validation by the store credits nothing until it is confirmed. If the Key does not appear, the User writes to eskapia.app@gmail.com with their Account identifier (Settings &gt; Help).</p>
+      <h2>Article 10 — Safety and conduct on the Trail</h2>
+      <p>The game takes place on public roads and in places the Publisher does not control. The App’s directions are neither traffic instructions nor a guarantee that a route is safe. The User undertakes to:</p>
+      <ul>
+        <li>comply with the Highway Code and use pavements and pedestrian crossings;</li>
+        <li>never look at their screen while walking or crossing, and not run;</li>
+        <li>take no risk in order to save time: no ranking justifies it. If in danger, they abandon the Step or the Game;</li>
+        <li>adapt their participation to their state of health, to the weather (heat, storms, rain making stairs and cobblestones slippery) and to the elevation. They should bring suitable shoes and water;</li>
+        <li>not play under the influence of alcohol or drugs;</li>
+        <li>respect places of worship: silence, appropriate dress, no playing during services;</li>
+        <li>respect the traboules and courtyards, which are private property opened to the public by agreement: silence, opening hours, doors closed behind them, consideration for residents;</li>
+        <li>respect the sites’ opening hours, not enter closed areas, not climb on the remains of the Ancient Theatre, and move or damage nothing;</li>
+        <li>carry a valid TCL transport ticket for the funicular, which is not included in the price;</li>
+        <li>keep any accompanying animal on a lead and under control, in accordance with the rules of each site;</li>
+        <li>not use a drone, and respect the image rights of the people they photograph or film.</li>
+      </ul>
+      <p>In an emergency, call 112 (European emergency number), 15 (ambulance), 17 (police) or 18 (fire brigade).</p>
+      <h2>Article 11 — Public profile and Leaderboard</h2>
+      <p>11.1. Visible information. The nickname, the profile picture, the best time and three medals chosen by the User are visible to other players. The profile picture is a JPEG, PNG or WebP file of less than 2 MB; it is reachable at a public web address, which is required to display it on the Leaderboard and on profiles.</p>
+      <p>11.2. Choice of nickname and visibility. The default nickname is “Joueur”; the User changes it from their profile. Any Game finished under the conditions of article 11.6 appears on the public Leaderboard under that nickname. A User who does not wish to appear there requests removal at eskapia.app@gmail.com; the Publisher does so without delay.</p>
+      <p>11.3. Prohibited content. The following nicknames and avatars are prohibited:</p>
+      <ul>
+        <li>insulting, discriminatory, violent or sexual;</li>
+        <li>contrary to the law;</li>
+        <li>impersonating another person;</li>
+        <li>depicting an identifiable person without their consent;</li>
+        <li>containing a third party’s personal data, contact details, advertising, links or third-party trade marks.</li>
+      </ul>
+      <p>11.4. Reporting. Anyone may report User content via eskapia.app@gmail.com. The report states the reasons and, where possible, the nickname concerned.</p>
+      <p>11.5. Moderation. The Publisher may amend or delete User content that breaches these terms. It informs the User of its decision and of the grounds for it. The User may challenge it at eskapia.app@gmail.com within 15 days; the Publisher then reviews the decision.</p>
+      <p>11.6. Leaderboard rules. The Leaderboard is based on the best final time of each Account, for Games finished within 24 hours, with location enabled and on foot, and not excluded by article 7.11. Where times are equal, the Accounts concerned share the same rank: two joint firsts are followed by a third (1, 1, 3). The App shows the ten best times and, if it is not among them, the User’s own line. The Publisher may run periodic leaderboards (monthly, seasonal); it announces any reset in the App at least 15 days in advance.</p>
+      <p>11.7. Medals and prizes. The current medals are: First steps, Explorer, Quick as lightning, Cool head, Flawless, Number one, Top 10 and Beta tester. Their conditions are stated in the App and may change; a medal once earned stays earned. Medals have no monetary value and are neither exchangeable nor transferable. The Leaderboard gives no entitlement to any prize, save under separate competition rules.</p>
+      <h2>Article 12 — Cheating and sanctions</h2>
+      <p>12.1. Prohibited practices. Cheating includes in particular:</p>
+      <ul>
+        <li>falsifying the GPS position;</li>
+        <li>using emulators, modified applications or automated tools;</li>
+        <li>exploiting a vulnerability;</li>
+        <li>falsifying the data sent to the App or to its servers;</li>
+        <li>using several Accounts to distort the Leaderboard, in particular by circumventing the limit in article 4.7;</li>
+        <li>using a means of transport prohibited by article 7.8.</li>
+      </ul>
+      <p>12.2. Sanctions. Depending on the seriousness and repetition of the facts, the Publisher may:</p>
+      <ul>
+        <li>cancel a time;</li>
+        <li>withdraw medals;</li>
+        <li>exclude the User from the Leaderboard;</li>
+        <li>temporarily suspend the Account;</li>
+        <li>terminate it.</li>
+      </ul>
+      <p>The sanction is proportionate and reasoned. The User may challenge it within 15 days at eskapia.app@gmail.com.</p>
+      <p>12.3. Refund. Where fraud is established, the Key or the Code is not refunded.</p>
+      <h2>Article 13 — Availability and changes to the service</h2>
+      <p>13.1. Interruptions. The Publisher endeavours to provide continuous access to the App. It may interrupt it for maintenance, where possible outside peak hours and with notice to Users.</p>
+      <p>13.2. Changes. The Publisher may change the puzzles and the App without altering the essential characteristics of the Trail.</p>
+      <p>13.3. Discontinuation. If the game is permanently discontinued, the Publisher gives Users at least 3 months’ notice.</p>
+      <ul>
+        <li>Unused Keys and Codes may be activated and played until the discontinuation date.</li>
+        <li>After that date, Keys purchased in the App and not used are refunded by the Publisher.</li>
+        <li>A Code unused at the discontinuation date becomes unusable. A Code issued free of charge by the Publisher gives rise to no refund; a Code obtained from an Authorised Reseller is refunded by that Reseller under its own terms, the Publisher for its part refunding the Authorised Reseller under article B10 of the terms of sale.</li>
+      </ul>
+      <h2>Article 14 — Personal data</h2>
+      <p>14.1. Controller. The Publisher is the controller of the personal data collected through the App. This processing is described in the Privacy policy, which sets out the purposes, the legal bases, the retention periods, the recipients and any transfers outside the European Union.</p>
+      <p>14.2. Location. The position is used by the User’s phone alone, during a Game, to compare the distance to the Step and allow it to be validated. It is neither transmitted to nor recorded by the Publisher’s servers, and is not read when the App is in the background or closed. The User may withdraw permission at any time in their phone settings; the consequences for the Game are described in article 7.9.</p>
+      <p>14.3. Minors. The Account of a User under 15 is created only with the consent of a parent or legal guardian (article 4.2).</p>
+      <p>14.4. User rights. The User has the rights of access, rectification, erasure, objection, restriction of processing and portability, as well as the right to withdraw consent at any time and to give instructions on what happens to their data after their death. They exercise these rights at eskapia.app@gmail.com. They may also lodge a complaint with the French data protection authority, the CNIL (www.cnil.fr).</p>
+      <p>14.5. Account deletion. Deleting the Account erases the profile, the profile picture, the progress, the Games, the medals, the unused Keys and the linked Google or e-mail identities, as well as the customer record opened with the purchase management provider. An accounting record of each purchase (amount, currency, date), with no link to the User, is kept in order to meet accounting and tax obligations. Apple and Google keep their own proofs of purchase under their own policies.</p>
+      <p>14.6. Providers. The Publisher uses Supabase Pte. Ltd., a Singapore company (hosting of the database, the accounts and the pictures in the European Union region — Ireland), Brevo (sending sign-in codes by e-mail), RevenueCat, Inc. (management of in-app purchases, United States) as well as Apple and Google (payment, sign-in, distribution). The Privacy policy gives the details and the safeguards applicable to transfers outside the European Union.</p>
+      <h2>Article 15 — Intellectual property</h2>
+      <p>15.1. Ownership. The App, its texts, puzzles, illustrations, sounds and databases, as well as the Eskapia trade marks and logos (formerly CITY QUEST), are the exclusive property of the Publisher and are protected by intellectual property law. No right is assigned to the User, other than the licence provided for in article 15.2.</p>
+      <p>15.2. Licence of use. The User receives a personal, non-exclusive and non-transferable right to use the App for their private use.</p>
+      <p>15.3. Prohibitions. The following are prohibited, save for exceptions provided by law:</p>
+      <ul>
+        <li>reproducing, decompiling and extracting content;</li>
+        <li>publishing the solutions to the puzzles, in any medium whatsoever;</li>
+        <li>any commercial use (paid guided tours, agencies, team building) without the Publisher’s written authorisation.</li>
+      </ul>
+      <p>15.4. User content. The User authorises the Publisher to display their nickname and profile picture in the App, including on the public Leaderboard and on their player profile, for the lifetime of their Account. They warrant that they hold the rights to the picture they submit and have the consent of the people shown in it.</p>
+      <h2>Article 16 — Liability</h2>
+      <p>16.1. The Publisher’s liability. The Publisher is liable for damage caused by a breach of its obligations.</p>
+      <p>16.2. Exclusions. It is not liable for damage resulting from:</p>
+      <ul>
+        <li>failure to comply with article 10;</li>
+        <li>the act of an unforeseeable third party that the Publisher could not prevent;</li>
+        <li>an event of force majeure within the meaning of article 1218 of the French Civil Code;</li>
+        <li>a defect in the User’s equipment or connection;</li>
+        <li>inaccuracy or unavailability of the location measurements of the User’s phone;</li>
+        <li>the loss of personal belongings during the Game.</li>
+      </ul>
+      <p>16.3. The User’s liability. The User is liable for the damage they cause to third parties and to the sites visited.</p>
+      <p>16.4. Limits of the exclusions. Nothing in these terms limits the Publisher’s liability for personal injury caused by its fault, nor the legal guarantees owed to the consumer.</p>
+      <h2>Article 17 — Duration and deletion of the Account</h2>
+      <p>17.1. Duration. These terms apply for an indefinite period.</p>
+      <p>17.2. Deletion by the User. The User may delete their Account at any time from Settings &gt; Account &gt; Delete my account. Deletion is final, under the conditions of article 14.5: it erases the progress, the time, the medals, the unused Keys and the public profile. A new blank Account is then created on the phone. A used Code or an activated Key remain consumed; any refund of a Key falls under the terms of sale and article 9.9.</p>
+      <p>17.3. Termination by the Publisher. The Publisher may terminate an Account in the event of a serious breach, after a formal notice that has remained without effect for 8 days, save in cases of urgency or established fraud.</p>
+      <h2>Article 18 — Changes to these terms</h2>
+      <p>18.1. Notice. The Publisher notifies any substantial change in the App at least 30 days before it takes effect. A change required by law or by player safety may apply immediately.</p>
+      <p>18.2. Refusal. A User who refuses the new terms may delete their Account before they take effect.</p>
+      <p>18.3. Games in progress and acquired access. Changes do not apply to Games in progress and do not call into question access to the Trail already acquired.</p>
+      <h2>Article 19 — Contact and claims</h2>
+      <p>Any question or claim should be addressed to eskapia.app@gmail.com or to Eskapia, 7 allée résidence Récamier, 69130 Écully, France. The Publisher replies within 15 days.</p>
+      <h2>Article 20 — Miscellaneous</h2>
+      <p>20.1. Partial invalidity. If a clause is declared void, the other clauses remain applicable.</p>
+      <p>20.2. No waiver. The fact that the Publisher does not rely on a clause does not amount to a waiver of the right to invoke it later.</p>
+      <p>20.3. Language. The French version of these terms is the binding one. Translations are provided for information only.</p>
+      <p>20.4. Evidence. The data recorded by the Publisher’s servers — the start and finish of Games, game actions, hints, penalties, unlocks and purchases — constitute evidence unless the contrary is proved. The User’s position is not recorded by those servers (articles 7.9 and 14.2): it therefore cannot serve as evidence either for or against them.</p>
+      <h2>Article 21 — Governing law and disputes</h2>
+      <p>21.1. Governing law. These terms are governed by French law. A consumer User residing in another European Union country retains the benefit of the protective provisions of the law of their own country.</p>
+      <p>21.2. Mediation. In the event of a dispute, the User first sends a written claim to the Publisher. Failing a solution within 2 months, they may refer the matter free of charge to the consumer ombudsman to which the Publisher belongs: Médiation Tourisme et Voyage (MTV), Médiateur du Tourisme et du Voyage, BP 80303, 75823 Paris Cedex 17, France, https://www.mtv.travel. The ombudsman must be contacted within one year of the written claim sent to the Publisher.</p>
+      <p>21.3. Competent courts. Failing agreement, the dispute is brought before the competent courts. A consumer may bring proceedings before the court of their place of residence.</p>
+    </div>
+  </section>
+
+  <!-- ===================== 中文 ===================== -->
+  <section data-lang="zh" lang="zh-Hans">
+    <h1>使用条款 — Eskapia</h1>
+    <p class="maj">第 3 版 — 2026 年 10 月 11 日</p>
+
+    <div class="carte">
+      <p class="maj"><strong>译文仅供参考。</strong>根据第 20.3 条，本条款以法文版本为准。本译文与法文文本如有出入，以法文文本为准。</p>
+      <h2>第 1 条 — 定义</h2>
+      <p>在本使用条款中：</p>
+      <ul>
+        <li>应用：Eskapia 移动应用（原名 CITY QUEST）及其更新版本，通过 Apple App Store 与 Google Play 分发。</li>
+        <li>发行方：Eskapia，Nathan DELPEUT 的商号，个体工商户，SIRET 13058222400015，地址 7 allée résidence Récamier, 69130 Écully, France，邮箱 eskapia.app@gmail.com。出版负责人：Nathan DELPEUT。</li>
+        <li>托管方：Supabase Pte. Ltd.，地址 65 Chulia Street #38-02/03, OCBC Centre, Singapore 049513，邮箱 legal@supabase.io（未公布电话号码），负责数据库、账户与头像的托管，数据保存在其欧盟区域（爱尔兰）。公开的支持页面与隐私页面由 GitHub, Inc.（GitHub Pages）托管：https://eskapiaapp.github.io/。</li>
+        <li>用户：安装或使用本应用的任何人。</li>
+        <li>账户：归属于某一用户的个人空间。</li>
+        <li>路线：「Lyon time travel」寻踪游戏，由五个站点组成，其中四个为谜题地点，详见第 6 条。</li>
+        <li>站点：路线上的五个点之一。站点或为谜题地点，或为中转（缆车）。</li>
+        <li>谜题：在某一谜题地点提出的六个问题之一。</li>
+        <li>对局：完成路线的一次尝试，自开始至完成或关闭为止。</li>
+        <li>钥匙：在应用内直接购买的路线访问权。</li>
+        <li>解锁码：可开启路线的解锁码。它或由发行方免费发放（测试、客服、商业善意），或由授权经销商依《销售条款》第 B 部分出售或赠予。</li>
+        <li>授权经销商：发行方向其出售解锁码、供其转售或赠予自身客户的专业中介（酒店、短租房东或 Airbnb 房东、餐厅、礼宾服务、旅游局），适用《销售条款》第 B 部分。</li>
+        <li>排行榜：公开的最佳用时榜。</li>
+        <li>用户内容：用户提交的昵称与头像。</li>
+      </ul>
+      <h2>第 2 条 — 目的与适用文件</h2>
+      <p>2.1. 本条款规范本应用的使用，无论免费或付费。Eskapia 是一款在里昂老城与富维耶山进行的户外寻踪游戏，在手机上游玩，并计时竞速。</p>
+      <p>2.2. 在应用内购买钥匙适用发行方的《销售条款》。由发行方发放的解锁码为免费，不适用任何销售条款；自授权经销商取得的解锁码适用该经销商自身的销售条款，而发行方与该经销商之间的关系适用《销售条款》第 B 部分。个人数据的处理见《隐私政策》，可在应用内（设置 &gt; 帮助）及 https://eskapiaapp.github.io/confidentialite.html 查阅。</p>
+      <p>2.3. 就购买钥匙的相关事项如有冲突，以《销售条款》为准。</p>
+      <h2>第 3 条 — 接受</h2>
+      <p>3.1. 首次启动应用时会创建一个匿名账户，无需邮箱与密码（第 5.1 条）。本条款在首次启动时呈现；用户须勾选确认框接受本条款，方可开始对局。</p>
+      <p>3.2. 本条款可随时在设置 &gt; 帮助及支持网站 https://eskapiaapp.github.io/ 查阅。历史版本予以保存，并可应要求提供。</p>
+      <h2>第 4 条 — 使用条件</h2>
+      <p>4.1. 年龄与未成年人。用户须年满 13 周岁方可独自游戏。未满 13 周岁的儿童可以游戏，但须由父母或监护人在整个对局过程中全程陪同。</p>
+      <p>4.2. 未满 15 周岁的用户须经父母或监护人同意方可创建账户。</p>
+      <p>4.3. 任何未成年人，即便已满 13 周岁，均在父母或监护人的责任下游戏，由其判断该未成年人能否独自在城市中出行。</p>
+      <p>4.4. 设备。游戏需要与 Google Play 或 App Store 所发布应用版本相兼容的 Android 或 iOS 手机；系统最低版本见各商店的应用页面。须开启定位、具备网络连接，以及可支撑约 3 小时使用的电量。建议携带移动电源。</p>
+      <p>4.5. 包括境外漫游在内的网络连接费用由用户自行承担。</p>
+      <p>4.6. 更新。为保证游戏与排行榜正常运作，发行方可要求安装最新版本的应用。</p>
+      <p>4.7. 每部手机的账户数量。应用将同一部手机可开设的账户数量限制为三个，含首次启动时创建的账户。</p>
+      <h2>第 5 条 — 账户</h2>
+      <p>5.1. 创建。首次启动时创建匿名账户，无需邮箱与密码。该账户带有一个标识符，用户可在设置 &gt; 帮助中查看，并应在任何申诉中提供给客服。</p>
+      <p>5.2. 关联。用户可将账户关联至某一邮箱（通过邮件收取一次性验证码登录）或 Google 账户，以便在其他设备上找回账户。目前尚不支持使用 Apple ID 登录。</p>
+      <p>5.3. 手机丢失或重置。未关联的账户在手机丢失、被盗、更换、重置或卸载应用后无法找回。进度随之丢失，已使用的解锁码仍视为已消耗。发行方强烈建议在首次对局前关联账户。</p>
+      <p>5.4. 每人一个账户。每人在排行榜上只能有一个账户。每部手机三个账户的技术上限（第 4.7 条）不构成在榜上登记多个账户的许可。</p>
+      <p>5.5. 保密。用户应对其登录凭据保密，并就任何欺诈性使用立即写信至 eskapia.app@gmail.com 报告。</p>
+      <p>5.6. 不活跃。未关联且连续 3 年不活跃的匿名账户可被删除。</p>
+      <p>5.7. 切换账户。用户可在设置 &gt; 账户中创建新的空白账户或返回已有账户。离开一个从未关联过的匿名账户将使其连同进度与钥匙永久无法找回；应用会在继续操作前予以警示。</p>
+      <h2>第 6 条 — 路线</h2>
+      <p>6.1. 构成。路线共五个站点，顺序固定：圣约翰主教座堂、F1 缆车（中转）、富维耶高卢罗马遗址（古剧场与奥德翁剧场）、富维耶圣母院，以及时之门。四个谜题地点各有六道谜题；中转站点没有谜题。前一站点未完成前不得验证下一站点。</p>
+      <p>6.2. 时长与强度。建议时长 3 小时，距离约 3.3 公里，累计爬升约 140 米。</p>
+      <p>6.3. 无障碍。路线包含台阶、石板路与明显坡度，并非完全适合行动不便者或婴儿车通行。</p>
+      <p>6.4. 开放时间。各场所的开放时间随季节与活动而变化。用户应在出发前自行确认。建议在晚上 8 点前开始，并在白天游玩。</p>
+      <p>6.5. 路线的调整。某一站点可能无法进入：关闭、施工、宗教仪式、游行、大型活动（尤其是灯光节）、安全措施或政府部门的决定。发行方届时可替换该站点、将其中性化，或允许远程验证。计时与排行榜将相应调整，并在应用内告知用户。</p>
+      <h2>第 7 条 — 流程与计时</h2>
+      <p>7.1. 开始。用户在应用内确认开始后，对局即开始。此前会有一个页面提示计时规则、24 小时的最长时限，以及必须步行的义务。</p>
+      <p>7.2. 计时。计时由发行方的服务器计算，开始时间与结束时间仅由服务器记录。计时自开始起持续进行，包括应用关闭、网络中断或手机关机的情形。不可暂停。采计的用时为服务器记录的开始至结束之间的时长，向下取整至秒，并加上罚时。</p>
+      <p>7.3. 站点验证。抵达站点通过手机的定位测量在 50 米半径内予以验证。测量结果须新近且可用。在狭窄街道、穿廊（traboules）及楼宇脚下，定位精度可能下降。验证失败时，用户应移至开阔处，并确认定位权限已授予并开启。除第 6.5 条的情形外，应用不提供任何远程验证：若某一站点始终无法验证，用户应依第 7.4 条放弃该站点，或依第 8 条报告该事件。</p>
+      <p>7.4. 罚时。</p>
+      <ul>
+        <li>答对不增加任何罚时。</li>
+        <li>使用一次提示增加 5 分钟。已获得的提示可继续查看，不再重复计罚。</li>
+        <li>跳过一道谜题增加 20 分钟。</li>
+        <li>放弃一个站点增加 20 分钟，并获得继续路线所需的代码。</li>
+      </ul>
+      <p>7.5. 对局结束。验证时之门后对局结束。最终用时为已用时间加罚时。自开始起 24 小时内未完成的对局由服务器自动关闭：该对局不计入排行榜，也不获得任何勋章，且无法继续；用户须自第一个站点重新开始新的对局，无需再次购买路线访问权，该权利依然有效。计时旁会显示倒计时。</p>
+      <p>7.6. 重玩。路线解锁后，用户可不限次数重玩。同一时间只能有一局进行中：重玩的前提是上一局已完成或已关闭。排行榜仅采计用户的最佳用时。</p>
+      <p>7.7. 组队游戏。一局对应一个账户与一部手机。一组玩家可共用一部手机：排行榜届时显示该账户的昵称，而非组内成员。每部单独用于游戏的手机均需各自的钥匙或解锁码。</p>
+      <p>7.8. 出行方式。站点之间的移动仅限步行。缆车是唯一例外，因为它本身即为路线的一个站点。禁止使用任何其他交通工具：汽车、出租车、网约车、公交、地铁、自行车、滑板车或任何其他载具。违反此规则完成的对局将从排行榜中移除；屡次违反者依第 12 条处理。</p>
+      <p>7.9. 定位。整个对局期间必须授予并开启定位权限：否则应用无法验证站点的抵达，对局将无法推进。用户可随时在手机设置中撤回授权；对局届时将停滞于当前站点，计时继续走动，直至其恢复授权或对局被关闭（第 7.5 条）。位置仅由手机在对局期间用于比对与站点的距离：它不会传输至、也不会记录于发行方的服务器，且在应用处于后台或关闭时不予读取。</p>
+      <p>7.10. 在地点的最短停留时间。谜题地点自开启起 5 分钟内不得离开，即便其全部谜题均已解答或跳过。放弃某一地点以及强行开启时之门，仅在该站点停留满 10 分钟后方可选择。上述时限由服务器核验。</p>
+      <p>7.11. 不计入排行榜的对局。对局因超时被关闭（第 7.5 条）、未走完路线全部站点，或曾被发行方的管理或测试工具触及的，不计入排行榜，也不获得任何勋章。该排除为最终决定；但不收回已获得的勋章。</p>
+      <h2>第 8 条 — 技术故障</h2>
+      <p>8.1. 可归责于发行方的故障。因其服务器故障或应用缺陷致使对局受阻或失真的，发行方经核实后将中性化所损失的时间，或提供一局新的计入排行的对局。</p>
+      <p>8.2. 用户一方的问题。电量耗尽、网络中断、拒绝定位权限、手机故障或操作失误，不导致时间被中性化：计时继续走动。只要对局尚未关闭，用户即可继续该局。</p>
+      <p>8.3. 报告。任何事件应在 7 日内写信至 eskapia.app@gmail.com 报告，并附上账户标识符与情况说明。发行方将在 7 个工作日内回复。</p>
+      <p>8.4. 漏洞。发现漏洞的用户应予以报告，且不得加以利用。</p>
+      <h2>第 9 条 — 解锁（钥匙与解锁码）</h2>
+      <p>9.1. 解锁方式。路线可通过在应用内购买的钥匙开启，或通过发行方免费发放、或自授权经销商取得的解锁码开启。发行方不在应用之外出售钥匙。</p>
+      <p>9.2. 解锁码的使用。解锁码一次性使用，且仅为一个账户开启路线。一经使用，既不可重新启用，也不可转移至其他账户。</p>
+      <p>9.3. 有效期。解锁码没有有效期：在使用前持续有效，但受第 13.3 条的限制。</p>
+      <p>9.4. 其他来源的解锁码。解锁码仅供发行方或授权经销商交付的该名用户使用。对于自其他第三方取得的解锁码，尤其是通过个人之间转售、交换或拍卖网站取得的，发行方不作任何担保，并可停用以此方式流通的解锁码。</p>
+      <p>9.5. 解锁码遗失或泄露。用户应在激活前妥善保管其解锁码。对于遗失、毁损、泄露或被第三方使用的解锁码，发行方没有更换义务；发行方可自行决定停用尚未使用的解锁码并另行发放。相关请求请写信至 eskapia.app@gmail.com，并附上账户标识符。</p>
+      <p>9.6. 输入解锁码。输入未知、已使用或已停用的解锁码不会开启任何权限，也不会消耗任何内容。发行方可限制尝试次数，并在重复输入或欺诈使用的情况下停用某一解锁码。</p>
+      <p>9.7. 撤销与退款。对于以欺诈方式取得的钥匙或解锁码，尤其是非法生成的，发行方可予以撤销。在开启路线之前经商店退款的钥匙将从账户中移除。已开启路线的钥匙不可退款（第 9.9 条）；若 Apple 或 Google 仍予以退款，已开启的权限予以保留，发行方可在屡次滥用时适用第 12 条的处罚。撤销权限不会删除已进行的对局，也不会影响排行榜。</p>
+      <p>9.8. 购买。钥匙仅能通过 Apple 或 Google 的应用内购买系统购买，价格按商店所显示、以用户所在国家的币种与税费计（截至 2026 年 10 月 11 日，法国为 29.99 欧元）。发行方不接收任何银行信息。购买适用发行方的《销售条款》以及商店自身的条款。</p>
+      <p>9.9. 已使用的钥匙不可退款。已用于开启路线的钥匙不可退款。该提示载于购买页面与应用的帮助中。应用内购买的退款由 Apple 或 Google 依其自身条款决定，发行方无从干预。</p>
+      <p>9.10. 不支持恢复购买。钥匙属于消耗型内容：无法从商店恢复。钥匙存在于 Eskapia 账户中；用户通过重新登录账户找回（第 5.2 条），而非通过重新安装应用。</p>
+      <p>9.11. 到账时间。商店确认付款后，钥匙由发行方的服务器计入账户，通常在数秒内完成。等待商店验证的付款在确认前不会计入任何钥匙。若钥匙未出现，用户可写信至 eskapia.app@gmail.com，并附上账户标识符（设置 &gt; 帮助）。</p>
+      <h2>第 10 条 — 路线上的安全与行为规范</h2>
+      <p>游戏在公共道路以及发行方无法控制的场所进行。应用的指引既非交通指示，也不保证通行安全。用户承诺：</p>
+      <ul>
+        <li>遵守交通法规，走人行道与人行横道；</li>
+        <li>行走或过马路时绝不看屏幕，且不奔跑；</li>
+        <li>不为节省时间冒任何风险：任何名次都不值得。遇有危险时，放弃该站点或该局；</li>
+        <li>根据自身健康状况、天气（高温、雷雨、雨水导致台阶与石板湿滑）与坡度调整参与方式，并备好合脚鞋具与饮水；</li>
+        <li>不在酒精或毒品影响下游戏；</li>
+        <li>尊重宗教场所：保持安静、着装得体、仪式期间不进行游戏；</li>
+        <li>尊重穿廊与庭院，它们是依约定向公众开放的私人产业：保持安静、遵守开放时间、随手关门、体谅居民；</li>
+        <li>遵守各场所的开放时间，不进入封闭区域，不攀爬古剧场遗迹，不移动或损毁任何物件；</li>
+        <li>自备有效的 TCL 交通票以乘坐缆车，该费用不含在价格之内；</li>
+        <li>对随行动物牵绳并加以管束，并遵守各场所的相关规定；</li>
+        <li>不使用无人机，并尊重其所拍摄或录制人员的肖像权。</li>
+      </ul>
+      <p>紧急情况下，请拨打 112（欧洲紧急电话）、15（急救）、17（警察）或 18（消防）。</p>
+      <h2>第 11 条 — 公开资料与排行榜</h2>
+      <p>11.1. 可见信息。昵称、头像、最佳用时，以及用户自选的三枚勋章对其他玩家可见。头像为小于 2 MB 的 JPEG、PNG 或 WebP 文件；它可通过公开网址访问，这是在排行榜与个人资料中显示头像所必需的。</p>
+      <p>11.2. 昵称的选择与可见性。默认昵称为「Joueur」；用户可在个人资料中修改。凡符合第 11.6 条条件完成的对局，均以该昵称出现在公开排行榜上。不愿出现在榜上的用户可写信至 eskapia.app@gmail.com 要求移除；发行方将立即处理。</p>
+      <p>11.3. 禁止内容。下列昵称与头像被禁止：</p>
+      <ul>
+        <li>侮辱性、歧视性、暴力或具有性意味的；</li>
+        <li>违法的；</li>
+        <li>冒用他人身份的；</li>
+        <li>未经同意呈现可识别自然人的；</li>
+        <li>含有第三方个人数据、联系方式、广告、链接或第三方商标的。</li>
+      </ul>
+      <p>11.4. 举报。任何人均可通过 eskapia.app@gmail.com 举报用户内容。举报应说明理由，并尽可能指明所涉昵称。</p>
+      <p>11.5. 内容管理。发行方可修改或删除违反本条款的用户内容，并将其决定与理由告知用户。用户可在 15 日内写信至 eskapia.app@gmail.com 提出异议；发行方届时将重新审查该决定。</p>
+      <p>11.6. 排行榜规则。排行榜依各账户的最佳最终用时排定，仅采计在 24 小时内完成、开启定位并以步行方式进行、且未被第 7.11 条排除的对局。用时相同的，相关账户并列同一名次：两名并列第一者之后为第三名（1、1、3）。应用显示前十名用时；若用户不在其中，另行显示其本人的一行。发行方可举办周期性排行（月度、季节性）；任何清零将在应用内至少提前 15 日公告。</p>
+      <p>11.7. 勋章与奖品。现有勋章为：初出茅庐、探索者、迅如闪电、冷静头脑、零失误、第一名、前十名与测试员。其获得条件载于应用内，并可能变动；已获得的勋章不予收回。勋章不具任何市场价值，不可交换也不可转让。排行榜不产生任何奖品权利，另有竞赛规则者除外。</p>
+      <h2>第 12 条 — 作弊与处罚</h2>
+      <p>12.1. 禁止行为。下列行为尤其构成作弊：</p>
+      <ul>
+        <li>伪造 GPS 位置；</li>
+        <li>使用模拟器、经修改的应用或自动化工具；</li>
+        <li>利用漏洞；</li>
+        <li>伪造发送至应用或其服务器的数据；</li>
+        <li>使用多个账户以扭曲排行榜，尤其是规避第 4.7 条的限制；</li>
+        <li>使用第 7.8 条所禁止的交通工具。</li>
+      </ul>
+      <p>12.2. 处罚。发行方可视情节轻重与是否屡犯：</p>
+      <ul>
+        <li>取消某一用时；</li>
+        <li>收回勋章；</li>
+        <li>将用户排除出排行榜；</li>
+        <li>临时冻结账户；</li>
+        <li>解除账户。</li>
+      </ul>
+      <p>处罚应合乎比例并说明理由。用户可在 15 日内写信至 eskapia.app@gmail.com 提出异议。</p>
+      <p>12.3. 退款。欺诈行为经查实的，钥匙或解锁码不予退款。</p>
+      <h2>第 13 条 — 服务的可用性与变更</h2>
+      <p>13.1. 中断。发行方努力保障应用的持续可用。发行方可因维护而中断服务，并尽可能避开高峰时段且提前告知用户。</p>
+      <p>13.2. 变更。发行方可在不改变路线基本特征的前提下调整谜题与应用。</p>
+      <p>13.3. 服务终止。游戏永久停止运营的，发行方至少提前 3 个月告知用户。</p>
+      <ul>
+        <li>未使用的钥匙与解锁码可在终止日期前激活并游玩。</li>
+        <li>该日期之后，在应用内购买且未使用的钥匙由发行方退款。</li>
+        <li>在终止日期仍未使用的解锁码将失效。由发行方免费发放的解锁码不产生任何退款；自授权经销商取得的解锁码由该经销商依其自身条款退款，发行方则依《销售条款》第 B10 条向授权经销商退款。</li>
+      </ul>
+      <h2>第 14 条 — 个人数据</h2>
+      <p>14.1. 数据控制者。发行方是通过应用收集的个人数据的控制者。相关处理活动见《隐私政策》，其中载明处理目的、法律依据、保存期限、接收方以及可能的欧盟境外传输。</p>
+      <p>14.2. 定位。位置仅由用户手机在对局期间使用，用于比对与站点的距离并据以验证。它不会传输至、也不会记录于发行方的服务器，且在应用处于后台或关闭时不予读取。用户可随时在手机设置中撤回授权；对对局的影响见第 7.9 条。</p>
+      <p>14.3. 未成年人。未满 15 周岁用户的账户须经父母或监护人同意方可创建（第 4.2 条）。</p>
+      <p>14.4. 用户权利。用户享有访问、更正、删除、反对、限制处理与可携带的权利，并有权随时撤回同意，以及就其身故后数据的处置作出指示。相关权利通过 eskapia.app@gmail.com 行使。用户亦可向法国数据保护机构 CNIL（www.cnil.fr）投诉。</p>
+      <p>14.5. 删除账户。删除账户将清除个人资料、头像、进度、对局记录、勋章、未使用的钥匙，以及关联的 Google 或邮箱身份，并同时清除在购买管理服务商处开立的客户记录。为履行会计与税务义务，每笔购买的会计记录（金额、币种、日期）将予以保留，且与用户无关联。Apple 与 Google 依其自身政策保存各自的购买凭证。</p>
+      <p>14.6. 服务商。发行方使用新加坡公司 Supabase Pte. Ltd.（在欧盟区域——爱尔兰——托管数据库、账户与头像）、Brevo（通过邮件发送登录验证码）、美国公司 RevenueCat, Inc.（应用内购买管理），以及 Apple 与 Google（付款、登录、分发）。《隐私政策》载明其详情，以及适用于欧盟境外传输的保障措施。</p>
+      <h2>第 15 条 — 知识产权</h2>
+      <p>15.1. 权利归属。本应用及其文字、谜题、插图、音效、数据库，以及 Eskapia（原 CITY QUEST）的商标与标识，均为发行方的独占财产，受知识产权法保护。除第 15.2 条规定的许可外，不向用户让与任何权利。</p>
+      <p>15.2. 使用许可。用户获得一项个人的、非独占的且不可转让的权利，以在私人范围内使用本应用。</p>
+      <p>15.3. 禁止事项。除法律另有规定的例外情形外，禁止：</p>
+      <ul>
+        <li>复制、反编译与提取内容；</li>
+        <li>以任何载体传播谜题答案；</li>
+        <li>未经发行方书面授权的任何商业使用（收费导览、旅行社、团建）。</li>
+      </ul>
+      <p>15.4. 用户内容。用户授权发行方在应用内展示其昵称与头像，包括在公开排行榜及其玩家资料页上，期限为其账户的存续期间。用户保证对其提交的照片拥有相应权利，并已取得照片中人物的同意。</p>
+      <h2>第 16 条 — 责任</h2>
+      <p>16.1. 发行方的责任。发行方对因违反其义务所造成的损害承担责任。</p>
+      <p>16.2. 免责情形。发行方不对下列原因造成的损害负责：</p>
+      <ul>
+        <li>不遵守第 10 条；</li>
+        <li>发行方无法阻止的不可预见第三方行为；</li>
+        <li>《法国民法典》第 1218 条意义上的不可抗力；</li>
+        <li>用户设备或网络连接的缺陷；</li>
+        <li>用户手机定位测量不准确或不可用；</li>
+        <li>对局期间个人物品的遗失。</li>
+      </ul>
+      <p>16.3. 用户的责任。用户对其给第三方及所访问场所造成的损害承担责任。</p>
+      <p>16.4. 免责的界限。本条款中的任何内容，均不限制发行方因其过错造成人身损害时的责任，亦不限制应向消费者提供的法定担保。</p>
+      <h2>第 17 条 — 期限与账户删除</h2>
+      <p>17.1. 期限。本条款适用期限不定。</p>
+      <p>17.2. 用户删除。用户可随时在设置 &gt; 账户 &gt; 删除我的账户中删除其账户。删除为最终操作，依第 14.5 条的条件进行：将清除进度、用时、勋章、未使用的钥匙与公开资料。随后会在手机上创建一个新的空白账户。已使用的解锁码或已激活的钥匙仍视为已消耗；钥匙的退款（如有）适用《销售条款》及第 9.9 条。</p>
+      <p>17.3. 发行方解除。发生严重违约的，发行方在催告后 8 日内仍未获纠正的，可解除该账户；情况紧急或欺诈经查实的除外。</p>
+      <h2>第 18 条 — 本条款的修改</h2>
+      <p>18.1. 预告。发行方就任何重大修改，至少在生效前 30 日于应用内通知。因法律要求或玩家安全所需的修改可立即适用。</p>
+      <p>18.2. 拒绝。拒绝新条款的用户可在其生效前删除账户。</p>
+      <p>18.3. 进行中的对局与已取得的权限。修改不适用于进行中的对局，也不影响已取得的路线访问权。</p>
+      <h2>第 19 条 — 联系与申诉</h2>
+      <p>任何问题或申诉请发送至 eskapia.app@gmail.com，或寄往 Eskapia, 7 allée résidence Récamier, 69130 Écully, France。发行方将在 15 日内回复。</p>
+      <h2>第 20 条 — 其他规定</h2>
+      <p>20.1. 部分无效。某一条款被宣告无效的，其余条款继续适用。</p>
+      <p>20.2. 不弃权。发行方未主张某一条款，不构成其日后援引该条款的权利的放弃。</p>
+      <p>20.3. 语言。本条款以法文版本为准。译文仅供参考。</p>
+      <p>20.4. 证据。发行方服务器所记录的数据——对局的开始与结束、游戏操作、提示、罚时、解锁与购买——在有相反证据前具有证明力。用户的位置不由这些服务器记录（第 7.9 条与第 14.2 条）：因此既不能作为对其有利的证据，也不能作为对其不利的证据。</p>
+      <h2>第 21 条 — 适用法律与争议</h2>
+      <p>21.1. 适用法律。本条款适用法国法律。居住在其他欧盟国家的消费者用户，仍享有其本国法律保护性规定的利益。</p>
+      <p>21.2. 调解。发生争议时，用户应首先向发行方提出书面申诉。2 个月内未获解决的，可免费向发行方所属的消费调解机构提出：Médiation Tourisme et Voyage（MTV），Médiateur du Tourisme et du Voyage，BP 80303, 75823 Paris Cedex 17, France，https://www.mtv.travel。向调解机构提出的期限为自向发行方提出书面申诉之日起一年内。</p>
+      <p>21.3. 管辖法院。未能达成一致的，争议提交有管辖权的法院处理。消费者可向其住所地法院提起诉讼。</p>
+    </div>
+  </section>
+</main>
+<script>
+  (function () {
+    var racine = document.documentElement;
+    function choisir(langue) {
+      racine.lang = langue;
+      document.querySelectorAll('[data-choix]').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.getAttribute('data-choix') === langue));
+      });
+    }
+    document.querySelectorAll('[data-choix]').forEach(function (b) {
+      b.addEventListener('click', function () { choisir(b.getAttribute('data-choix')); });
+    });
+    var nav = (navigator.language || 'fr').toLowerCase();
+    choisir(nav.indexOf('fr') === 0 ? 'fr' : nav.indexOf('zh') === 0 ? 'zh' : 'en');
+  })();
+</script>
+</body>
+</html>
