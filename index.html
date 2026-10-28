@@ -97,12 +97,19 @@
           (e-mail, Google ou Apple). Sans adresse liée, ou si vous ne l’avez pas reçue, vous gardez 14 jours pour vous rétracter :
           écrivez-nous. Le reçu d’Apple ou de Google fait preuve de l’achat.</p>
       </details>
-      <details>
-        <summary>Supprimer mon compte et mes données</summary>
+      <details id="supprimer-compte" data-ancre="supprimer-compte">
+        <summary>Supprimer mon compte Eskapia et mes données</summary>
         <p>Dans l’application : Réglages → Compte → « Supprimer mon compte », puis confirmez deux fois.
           Votre compte et vos données sont effacés immédiatement et définitivement. Si vous n’avez plus
           accès à l’application, écrivez-nous en indiquant votre identifiant (ou l’adresse e-mail liée
           au compte) : nous supprimons le compte sous 30 jours.</p>
+        <p><strong>Effacés</strong> : profil, pseudo, photo, phrase, progression, parties, temps,
+          médailles, clés non utilisées, identités Google, Apple ou e-mail rattachées, et votre fiche
+          client chez RevenueCat. <strong>Conservés</strong>, sans lien avec vous : le montant, la devise
+          et la date de chaque achat (10 ans, obligation comptable) et l’état « utilisé » des codes de
+          déblocage. Les messages au support sont gardés 3 ans après le dernier échange, les journaux
+          techniques 12 mois au plus. Apple et Google gardent leurs propres reçus d’achat. Détails :
+          <a href="confidentialite.html">politique de confidentialité</a>.</p>
       </details>
     </div>
 
@@ -166,11 +173,17 @@
           Google or Apple). With no linked address, or if you did not receive it, you keep 14 days to withdraw: write to us.
           The Apple or Google receipt is proof of purchase.</p>
       </details>
-      <details>
-        <summary>Delete my account and data</summary>
+      <details data-ancre="supprimer-compte">
+        <summary>Delete my Eskapia account and data</summary>
         <p>In the app: Settings → Account → “Delete my account”, then confirm twice. Your account and data
           are erased immediately and permanently. If you no longer have access to the app, write to us with
           your ID (or the e-mail address linked to the account): we will delete the account within 30 days.</p>
+        <p><strong>Erased</strong>: profile, nickname, photo, motto, progress, games, times, medals, unused
+          keys, linked Google, Apple or e-mail identities, and your customer record at RevenueCat.
+          <strong>Kept</strong>, with no link to you: the amount, currency and date of each purchase
+          (10 years, accounting obligation) and the “used” status of unlock codes. Support messages are
+          kept 3 years after the last exchange, technical logs 12 months at most. Apple and Google keep
+          their own purchase receipts. Details: <a href="confidentialite.html">privacy policy</a>.</p>
       </details>
     </div>
 
@@ -227,10 +240,14 @@
           账户中申请。已用于解锁路线的钥匙不可退款。 购买时，你要求立即获得钥匙并放弃撤回权；若账户已关联地址（电子邮箱、Google 或 Apple），购买确认将通过电子邮件发送给你。
           若未关联地址或未收到确认，你仍享有 14 日的撤回期：请写信给我们。Apple 或 Google 的收据即为购买凭证。</p>
       </details>
-      <details>
-        <summary>删除我的账户和数据</summary>
+      <details data-ancre="supprimer-compte">
+        <summary>删除我的 Eskapia 账户和数据</summary>
         <p>在应用中：设置 → 账户 → “删除我的账户”，然后确认两次。你的账户和数据会立即被永久删除。
           如果你已无法使用应用，请附上你的识别码（或账户关联的邮箱）给我们写信：我们会在 30 天内删除该账户。</p>
+        <p><strong>删除</strong>：个人资料、昵称、照片、宣言、进度、游戏记录、用时、奖章、未使用的钥匙、
+          关联的 Google、Apple 或邮箱身份，以及你在 RevenueCat 的客户记录。<strong>保留</strong>（与你无关联）：
+          每笔购买的金额、币种和日期（保存 10 年，会计义务）以及解锁码的“已使用”状态。客服邮件在最后一次往来后保存 3 年，
+          技术日志最多保存 12 个月。Apple 和 Google 各自保留其购买收据。详情见<a href="confidentialite.html">隐私政策</a>。</p>
       </details>
     </div>
 
@@ -262,6 +279,11 @@
     });
     var nav = (navigator.language || 'fr').toLowerCase();
     choisir(nav.indexOf('fr') === 0 ? 'fr' : nav.indexOf('zh') === 0 ? 'zh' : 'en');
+    // Lien direct (#supprimer-compte, demandé par Google Play) : ouvre la rubrique dans la langue affichée.
+    if (location.hash.length > 1) {
+      var cible = document.querySelector('[data-lang="' + racine.lang + '"] [data-ancre="' + location.hash.slice(1) + '"]');
+      if (cible) { cible.open = true; cible.scrollIntoView(); }
+    }
   })();
 </script>
 </body>
